@@ -1,0 +1,56 @@
+#must {
+    display: none;
+}
+
+.buthere {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+.btn.btn-primary.l {
+    flex: 1;
+    border-radius: 5px;
+    margin-right: 5px;
+    min-height: 25 px;
+}
+
+
+.btn.btn-primary.r {
+    margin-left: auto;
+    border-radius: 5px;
+    margin-left: 5px;
+    min-height: 25 px;
+}
+
+#copyclear{
+    background-color: rgb(20, 20, 20);
+}
+
+#copyrecitekeys{
+    background-color: rgb(175, 61, 99);
+}
+
+#left-input {
+    min-height: 250px;
+    font-size: 13px;
+    width: 35%;
+    margin-right: 4px;
+}
+
+#right-input {
+    min-height: 250px;
+    font-size: 13px;
+    width: 65%;
+    margin-left: 4px;
+}
+
+
+#citekeys {
+    font-size: 13px;
+    width: 100%;
+    min-height: 60px;
+    margin-top: 5px;
+}

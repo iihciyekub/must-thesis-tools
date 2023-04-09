@@ -390,8 +390,43 @@ console.log("My extension loaded!");
 }));
 
 
-const strokes = "乙丁九刁刀力乜于士才寸大上山千及夕之己弓子王亓井天夫元五支不太友尤巨戈止少中水牛毛壬仁仇仉化仍戶户介公丹勾殳卞六文亢方尹孔巴以允毋玉示邗巧邛功甘世艾古本可丙左石布戊平北占甲申田由史冉生禾丘代仙白他瓜仝令用印卯包市玄永司弘出召皮台母匡刑邢戎圭吉考老芒西在有百成夷光曲同回年朱竹休伍伏延仲仵任仰伊向似行全合兆夙危多次衣亥充羊米汗江汲池汝宇守字安祁那阮羽牟扶抄赤折孝抗却芮花杜巫杞李求孛車车甫束吾豆邴夾夹邶步肖貝贝呂吕別别吳吴岑告利邱何但伯佟位佛佘希邸狂狄彤系言况冷辛汪沐沙沃沈忻完宋宏牢良初罕尾局改阿陀姒邵邰奉武青表長长拓幸招其苦昔茂苗英苟茆苑茅林枝枚析板來来松杭東东奈奇叔歧卓虎尚果昌門门明易昂典呼帖迮牧和季委竺侍岳佴佼依帛卑所金受念瓮朋肥周咎京冼府庚於卷法泣泥波性宗定宜官空宛宓郎房祈建居屈承孟函姓始春封拱城郝荊荆革荀胡茹南柯查相柏柳厙厍威厚郟郏是冒星哈拜郜香秋段修保信皇泉禹侯帥帅俟律後后俞郗俎風风逄昝計计哀度奕施前首洪洛洋宣宦冠軍军祖祝弭韋韦胥姚飛飞盈羿勇柔紅红紀纪泰秦班敖素馬马貢贡袁都盍耿華华恭莫莘晋真莊庄桂桓桐校索軒轩連连速栗夏原柴時时畢毕閃闪晁晏員员剛刚乘秘候倪倫伦隽皋烏乌師师徐殷針针釗钊奚翁卿逢留衷高郭席庫库唐旁旅益烟郯浦酒海浮悟家宮宫容宰書书展陸陆陳陈孫孙陰阴陶姬通能務务桑納纳理堵捷焉赧接聊萇苌萊莱菅乾梅麥麦曹區区堅坚戚盛雪雀堂常眭野閆闫閉闭問问婁娄鄂國国崔崇過过犁笪符第敏偶進进偉伟從从悉脫脱魚鱼象斛祭訥讷許许庹麻庾康鹿章商望牽牵粘清淩凌渠淦淳淡梁寇宿扈逮逯尉屠張张隋將将陽阳隗隆習习貫贯終终紹绍巢貳贰琴琦堯尧塔項项越賁贲揚扬揭喜彭達达斯黃黄葉叶萬万葛董敬葷荤辜植森棟栋惠覃粟雲云斐紫掌戢開开閎闳閔闵遇景貴贵單单喻買买無无智嵇程稅税喬乔答傅集焦鄔邬須须舒鈔钞欽钦鈄钭鈕钮禽舜猶犹貿贸鄒邹馮冯童善普道曾勞劳湛湯汤滑游渾浑惲恽寒富運运祿禄尋寻强費费疏賀贺登瑞載载鄢勢势聖圣蓋盖鄞勤靳蒼苍蒯蓬蒿蒲蒙幹干楚楊杨裘甄賈贾雷零頓顿督訾虞業业睦睢愚路農农節节微徭愈愛爱貊詹解詩诗廉資资裔靖雍義义慈溥源溫温塗涂慎塞褚福辟經经碧趙赵嘉赫壽寿綦慕蔔卜蔡蔚蔣蒋厲厉碩硕爾尔臧裴暢畅聞闻閩闽閭闾鄲郸圖图種种稱称箕管毓僕仆僑侨僧僪銀银鳳凤說说廣广麽么廖竭韶端齊齐旗養养鄭郑榮荣漢汉滿满漆漫賓宾寧宁實实肇禚暨隨随翟翠熊鄧邓緒绪綫线撒駒驹鞏巩穀谷蕢蒉樓楼樊歐欧劇剧輝辉賞赏暴墨稽黎範范儀仪樂乐德衛卫盤盘銳锐劍剑虢餘余滕魯鲁劉刘諸诸諾诺談谈摩褒慶庆翦潜潮潭潘澄遲迟嬀妫練练緱缑駱骆操薑姜燕薛薊蓟薄蕭萧薩萨樹树樸朴橋桥機机賴赖融醜丑勵励曆历霍冀頻频盧卢閻阎蹉戰战穆篤笃興兴學学衡錯错錢钱鮑鲍獨独諶谌諫谏憑凭鄺邝磨龍龙嬴營营澹隱隐璩環环戴聲声鞠藍蓝藏韓韩檢检檀霜戲戏矯矫魏繁儲储禦御鍾锺斂敛鮮鲜謝谢糜應应齋斋濮濯賽赛蹇謇禮礼彌弥縱纵繆缪騎骑聶聂藤藩豐丰叢丛瞿闕阙曠旷顓颛簡简雙双邊边歸归鎮镇鎖锁謬谬顔颜額额禰祢藺蔺蘇苏麴闞阚關关蟻蚁嚴严羅罗鏡镜譚谭譙谯龐庞類类瀧泷懷怀繩绳壤蘭兰酆鹹咸黨党籍鐘钟釋释饒饶騰腾寶宝竇窦權权酈郦鐵铁鐸铎夔顧顾續续穰龔龚襲袭欒栾讓让蠻蛮釁衅鬱郁abcdefghijklmnopqrstuvwxyz";
 
+const strokes = "乙丁九刁刀力乜于士才寸大上山千及夕之己弓子王亓井天夫元五支不太友尤巨戈止少中水牛毛壬仁仇仉化仍戶户介公丹勾殳卞六文亢方尹孔巴以允毋玉示邗巧邛功甘世艾古本可丙左石布戊平北占甲申田由史冉生禾丘代仙白他瓜仝令用印卯包市玄永司弘出召皮台母匡刑邢戎圭吉考老芒西在有百成夷光曲同回年朱竹休伍伏延仲仵任仰伊向似行全合兆夙危多次衣亥充羊米汗江汲池汝宇守字安祁那阮羽牟扶抄赤折孝抗却芮花杜巫杞李求孛車车甫束吾豆邴夾夹邶步肖貝贝呂吕別别吳吴岑告利邱何但伯佟位佛佘希邸狂狄彤系言况冷辛汪沐沙沃沈忻完宋宏牢良初罕尾局改阿陀姒邵邰奉武青表長长拓幸招其苦昔茂苗英苟茆苑茅林枝枚析板來来松杭東东奈奇叔歧卓虎尚果昌門门明易昂典呼帖迮牧和季委竺侍岳佴佼依帛卑所金受念瓮朋肥周咎京冼府庚於卷法泣泥波性宗定宜官空宛宓郎房祈建居屈承孟函姓始春封拱城郝荊荆革荀胡茹南柯查相柏柳厙厍威厚郟郏是冒星哈拜郜香秋段修保信皇泉禹侯帥帅俟律後后俞郗俎風风逄昝計计哀度奕施前首洪洛洋宣宦冠軍军祖祝弭韋韦胥姚飛飞盈羿勇柔紅红紀纪泰秦班敖素馬马貢贡袁都盍耿華华恭莫仓倉莘晋真莊庄桂桓桐校索軒轩連连速栗夏原柴時时畢毕閃闪晁晏員员剛刚乘秘候倪倫伦隽皋烏乌師师徐殷針针釗钊奚翁卿逢留衷高郭席庫库唐旁旅益烟郯浦酒海浮悟家宮宫容宰書书展陸陆陳陈孫孙陰阴陶姬通能務务桑納纳理堵捷焉赧接聊萇苌萊莱菅乾梅麥麦曹區区堅坚戚盛雪雀堂常眭野閆闫閉闭問问婁娄鄂國国崔崇過过犁笪符第敏偶進进偉伟從从悉脫脱魚鱼象斛祭訥讷許许庹麻庾康鹿章商望牽牵粘清淩凌渠淦淳淡梁寇宿扈逮逯尉屠張张隋將将陽阳隗隆習习貫贯終终紹绍巢貳贰琴琦堯尧塔項项越賁贲揚扬揭喜彭達达斯黃黄葉叶萬万葛董敬葷荤辜植森棟栋惠覃粟雲云斐紫掌戢開开閎闳閔闵遇景貴贵單单喻買买無无智嵇程稅税喬乔答傅集焦鄔邬須须舒鈔钞欽钦鈄钭鈕钮禽舜猶犹貿贸鄒邹馮冯童善普道曾勞劳湛湯汤滑游渾浑惲恽寒富運运祿禄尋寻强費费疏賀贺登瑞載载鄢勢势聖圣蓋盖鄞勤靳蒼苍蒯蓬蒿蒲蒙幹干楚楊杨裘甄賈贾雷零頓顿督訾虞業业睦睢愚路農农節节微徭愈愛爱貊詹解詩诗廉資资裔靖雍義义慈溥源溫温塗涂慎塞褚福辟經经碧趙赵嘉赫壽寿綦慕蔔卜蔡蔚蔣蒋厲厉碩硕爾尔臧裴暢畅聞闻閩闽閭闾鄲郸圖图種种稱称箕管毓僕仆僑侨僧僪銀银鳳凤說说廣广麽么廖竭韶端齊齐旗養养鄭郑榮荣漢汉滿满漆漫賓宾寧宁實实肇禚暨隨随翟翠熊鄧邓緒绪綫线撒駒驹鞏巩穀谷蕢蒉樓楼樊歐欧劇剧輝辉賞赏暴墨稽黎範范儀仪樂乐德衛卫盤盘銳锐劍剑虢餘余滕魯鲁劉刘諸诸諾诺談谈摩褒慶庆翦潜潮潭潘澄遲迟嬀妫練练緱缑駱骆操薑姜燕薛薊蓟薄蕭萧薩萨樹树樸朴橋桥機机賴赖融醜丑勵励曆历霍冀頻频盧卢閻阎蹉戰战穆篤笃興兴學学衡錯错錢钱鮑鲍獨独諶谌諫谏憑凭鄺邝磨龍龙嬴營营澹隱隐璩環环戴聲声鞠藍蓝藏韓韩檢检檀霜戲戏矯矫魏繁儲储禦御鍾锺斂敛鮮鲜謝谢糜應应齋斋濮濯賽赛蹇謇禮礼彌弥縱纵繆缪騎骑聶聂藤藩豐丰叢丛瞿闕阙曠旷顓颛簡简雙双邊边歸归鎮镇鎖锁謬谬顔颜額额禰祢藺蔺蘇苏麴闞阚關关蟻蚁嚴严羅罗鏡镜譚谭譙谯龐庞類类瀧泷懷怀繩绳壤蘭兰酆鹹咸黨党籍鐘钟釋释饒饶騰腾寶宝竇窦權权酈郦鐵铁鐸铎夔顧顾續续穰龔龚襲袭欒栾讓让蠻蛮釁衅鬱郁abcdefghijklmnopqrstuvwxyz";
+
+const strokes_py = [
+    "yi", "ding", "jiu", "diao", "dao", "li", "nie", "yu", "shi", "cai", "cun", "da", "shang", "shan", "qian", "ji", "xi", "zhi", "ji", "gong", "zi", "wang", "qi", "jing", "tian", "fu", "yuan", "wu", "zhi", "bu", "tai", "you", "you", "ju", "ge", "zhi", "shao", "zhong", "shui", "niu", "mao", "ren", "ren", "chou", "zhang", "hua", "reng", "hu", "hu", "jie", "gong", "dan", "gou", "shu", "bian", "liu", "wen", "kang", "fang", "yin", "kong", "ba", "yi", "yun", "wu", "yu", "shi", "han", "qiao", "qiong", "gong", "gan", "shi", "ai", "gu", "ben", "ke", "bing", "zuo", "shi", "bu", "wu", "ping", "bei", "zhan", "jia", "shen", "tian", "you", "shi", "ran", "sheng", "he", "qiu", "dai", "xian", "bai", "ta", "gua", "tong", "ling", "yong", "yin", "mao", "bao", "shi", "xuan", "yong", "si", "hong", "chu", "zhao", "pi", "tai", "mu", "kuang", "xing", "xing", "rong", "gui", "ji", "kao", "lao", "mang", "xi", "zai", "you", "bai", "cheng", "yi", "guang", "qu", "tong", "hui", "nian", "zhu", "zhu", "xiu", "wu", "fu", "yan", "zhong", "wu", "ren", "yang", "yi", "xiang", "si", "hang", "quan", "he", "zhao", "su", "wei", "duo", "ci", "yi", "hai", "chong", "yang", "mi", "han", "jiang", "ji", "chi", "ru", "yu", "shou", "zi", "an", "qi", "na", "ruan", "yu", "mou", "fu", "chao", "chi", "she", "xiao", "kang", "que", "rui", "hua", "du", "wu", "qi", "li", "qiu", "bo", "che", "che", "fu", "shu", "wu", "dou", "bing", "ga", "jia", "bei", "bu", "xiao", "bei", "bei", "lu", "lu", "bie", "bie", "wu", "wu", "cen", "gao", "li", "qiu", "he", "dan", "bo", "tong", "wei", "fo", "she", "xi", "di", "kuang", "di", "tong", "xi", "yan", "kuang", "leng", "xin", "wang", "mu", "sha", "wo", "shen", "xin", "wan", "song", "hong", "lao", "liang", "chu", "han", "wei", "ju", "gai", "a", "tuo", "si", "shao", "tai", "feng", "wu", "qing", "biao", "zhang", "zhang", "tuo", "xing", "zhao", "qi", "ku", "xi", "mao", "miao", "ying", "gou", "mao", "yuan", "mao", "lin", "zhi", "mei", "xi", "ban", "lai", "lai", "song", "hang", "dong", "dong", "nai", "qi", "shu", "qi", "zhuo", "hu", "shang", "guo", "chang", "men", "men", "ming", "yi", "ang", "dian", "hu", "tie", "ze", "mu", "he", "ji", "wei", "zhu", "shi", "yue", "er", "jiao", "yi", "bo", "bei", "suo", "jin", "shou", "nian", "weng", "peng", "fei", "zhou", "jiu", "jing", "xian", "fu", "geng", "yu", "juan", "fa", "qi", "ni", "bo", "xing", "zong", "ding", "yi", "guan", "kong", "wan", "mi", "lang", "fang", "qi", "jian", "ju", "qu", "cheng", "meng", "han", "xing", "shi", "chun", "feng", "gong", "cheng", "hao", "jing", "jing", "ge", "xun", "hu", "ru", "nan", "ke", "cha", "xiang", "bai", "liu", "she", "she", "wei", "hou", "jia", "jia", "shi", "mao", "xing", "ha", "bai", "gao", "xiang", "qiu", "duan", "xiu", "bao", "xin", "huang", "quan", "yu", "hou", "shuai", "shuai", "si", "lu", "hou", "hou", "yu", "xi", "zu", "feng", "feng", "pang", "zan", "ji", "ji", "ai", "du", "yi", "shi", "qian", "shou", "hong", "luo", "yang", "xuan", "huan", "guan", "jun1", "jun1", "zu", "zhu", "mi", "wei", "wei", "xu", "yao", "fei", "fei", "ying", "yi", "yong", "rou", "hong", "hong", "ji", "ji", "tai", "qin", "ban", "ao", "su", "ma", "ma", "gong", "gong", "yuan", "dou", "he", "geng", "hua", "hua", "gong", "mo", "cang", "cang", "shen", "jin", "zhen", "zhuang", "zhuang", "gui", "huan", "tong", "xiao", "suo", "xuan", "xuan", "lian", "lian", "su", "li", "xia", "yuan", "chai", "shi", "shi", "bi", "bi", "shan", "shan", "chao", "yan", "yuan", "yuan", "gang", "gang", "cheng", "mi", "hou", "ni", "lun", "lun", "jun4", "gao", "wu", "wu", "shi", "shi", "xu", "yin", "zhen", "zhen", "zhao", "zhao", "xi", "weng", "qing", "feng", "liu", "zhong", "gao", "guo", "xi", "ku", "ku", "tang", "pang", "lu", "yi", "yan", "tan", "pu", "jiu", "hai", "fu", "wu", "jia", "gong", "gong", "rong", "zai", "shu", "shu", "zhan", "lu", "lu", "chen", "chen", "sun", "sun", "yin", "yin", "tao", "ji", "tong", "neng", "wu", "wu", "sang", "na", "na", "li", "du", "jie", "yan", "nan", "jie", "liao", "chang", "chang", "lai", "lai", "jian", "qian", "mei", "mai", "mai", "cao", "qu", "qu", "jian", "jian", "qi", "sheng", "xue", "que", "tang", "chang", "sui", "ye", "yan", "yan", "bi", "bi", "wen", "wen", "lou", "lou", "e", "guo", "guo", "cui", "chong", "guo", "guo", "li", "da", "fu", "di", "min", "ou", "jin", "jin", "wei", "wei", "cong", "cong", "xi", "tuo", "tuo", "yu", "yu", "xiang", "hu", "ji", "ne", "ne", "xu", "xu", "tuo", "ma", "yu", "kang", "lu", "zhang", "shang", "wang", "qian", "qian", "zhan", "qing", "ling", "ling", "qu", "gan", "chun", "dan", "liang", "kou", "xiu", "hu", "dai", "lu", "wei", "tu", "zhang", "zhang", "sui", "jiang", "jiang", "yang", "yang", "wei", "long", "xi", "xi", "guan", "guan", "zhong", "zhong", "shao", "shao", "chao", "er", "er", "qin", "qi", "yao", "yao", "ta", "xiang", "xiang", "yue", "ben", "ben", "yang", "yang", "jie", "xi", "peng", "da", "da", "si", "huang", "huang", "ye", "ye", "wan", "wan", "ge", "dong", "jing", "hun", "hun", "gu", "zhi", "sen", "dong", "dong", "hui", "tan", "su", "yun", "yun", "fei", "zi", "zhang", "ji", "kai", "kai", "hong", "hong", "min", "min", "yu", "jing", "gui", "gui", "dan", "dan", "yu", "mai", "mai", "wu", "wu", "zhi", "ji", "cheng", "shui", "shui", "qiao", "qiao", "da", "fu", "ji", "jiao", "wu", "wu", "xu", "xu", "shu", "chao", "chao", "qin", "qin", "dou", "tou", "niu", "niu", "qin", "shun", "you", "you", "mao", "mao", "zou", "zou", "feng", "feng", "tong", "shan", "pu", "dao", "ceng", "lao", "lao", "zhan", "tang", "tang", "hua", "you", "hun", "hun", "yun", "yun", "han", "fu", "yun", "yun", "lu", "lu", "xun", "xun", "qiang", "fei", "fei", "shu", "he", "he", "deng", "rui", "zai", "zai", "yan", "shi", "shi", "sheng", "sheng", "gai", "gai", "yin", "qin", "jin", "cang", "cang", "kuai", "peng", "hao", "pu", "meng", "gan", "gan", "chu", "yang", "yang", "qiu", "zhen", "jia", "jia", "lei", "ling", "dun", "dun", "du", "zi", "yu", "ye", "ye", "mu", "sui", "yu", "lu", "nong", "nong", "jie", "jie", "wei", "yao", "yu", "ai", "ai", "mo", "zhan", "jie", "shi", "shi", "lian", "zi", "zi", "yi", "jing", "yong", "yi", "yi", "ci", "pu", "yuan", "wen", "wen", "tu", "tu", "shen", "sai", "chu", "fu", "pi", "jing", "jing", "bi", "zhao", "zhao", "jia", "he", "shou", "shou", "qi", "mu", "bo", "bo", "cai", "wei", "jiang", "jiang", "li", "li", "shuo", "shuo", "er", "er", "zang", "pei", "chang", "chang", "wen", "wen", "min", "min", "lu", "lu", "dan", "dan", "tu", "tu", "zhong", "zhong", "cheng", "cheng", "ji", "guan", "yu", "pu", "pu", "qiao", "qiao", "seng", "yu", "yin", "yin", "feng", "feng", "shuo", "shuo", "guang", "guang", "me", "me", "liao", "jie", "shao", "duan", "qi", "qi", "qi", "yang", "yang", "zheng", "zheng", "rong", "rong", "han", "han", "man", "man", "qi", "man", "bin", "bin", "ning", "ning", "shi", "shi", "zhao", "zhuo", "ji", "sui", "sui", "zhai", "cui", "xiong", "deng", "deng", "xu", "xu", "xian", "xian", "sa", "ju", "ju", "gong", "gong", "yu", "gu", "kuai", "kui", "lou", "lou", "fan", "ou", "ou", "ju", "ju", "hui", "hui", "shang", "shang", "bao", "mo", "ji", "li", "fan", "fan", "yi", "yi", "le", "le", "de", "wei", "wei", "pan", "pan", "rui", "rui", "jian", "jian", "guo", "yu", "yu", "teng", "lu", "lu", "liu", "liu", "zhu", "zhu", "nuo", "nuo", "tan", "tan", "mo", "bao", "qing", "qing", "jian", "qian", "chao", "tan", "pan", "cheng", "chi", "chi", "gui", "gui", "lian", "lian", "gou", "gou", "luo", "luo", "cao", "jiang", "jiang", "yan", "xue", "ji", "ji", "bao", "xiao", "xiao", "sa", "sa", "shu", "shu", "pu", "pu", "qiao", "qiao", "ji", "ji", "lai", "lai", "rong", "chou", "chou", "li", "li", "li", "li", "huo", "ji", "pin", "pin", "lu", "lu", "yan", "yan", "cuo", "zhan", "zhan", "mu", "du", "du", "xing", "xing", "xue", "xue", "heng", "cuo", "cuo", "qian", "qian", "bao", "bao", "du", "du", "chen", "chen", "jian", "jian", "ping", "ping", "kuang", "kuang", "mo", "long", "long", "ying", "ying", "ying", "dan", "yin", "yin", "qu", "huan", "huan", "dai", "sheng", "sheng", "ju", "lan", "lan", "cang", "han", "han", "jian", "jian", "tan", "shuang", "xi", "xi", "jiao", "jiao", "wei", "fan", "chu", "chu", "yu", "yu", "zhong", "zhong", "lian", "lian", "xian", "xian", "xie", "xie", "mi", "ying", "ying", "zhai", "zhai", "pu", "zhuo", "sai", "sai", "jian", "jian", "li", "li", "mi", "mi", "zong", "zong", "miu", "miu", "qi", "qi", "nie", "nie", "teng", "fan", "feng", "feng", "cong", "cong", "qu", "que", "que", "kuang", "kuang", "zhuan", "zhuan", "jian", "jian", "shuang", "shuang", "bian", "bian", "gui", "gui", "zhen", "zhen", "suo", "suo", "miu", "miu", "ya", "yan", "e", "e", "mi", "mi", "lin", "lin", "su", "su", "qu", "kan", "kan", "guan", "guan", "yi", "yi", "yan", "yan", "luo", "luo", "jing", "jing", "tan", "tan", "qiao", "qiao", "pang", "pang", "lei", "lei", "long", "long", "huai", "huai", "sheng", "sheng", "rang", "lan", "lan", "feng", "jian", "xian", "dang", "dang", "ji", "zhong", "zhong", "shi", "shi", "rao", "rao", "teng", "teng", "bao", "bao", "dou", "dou", "quan", "quan", "li", "li", "tie", "tie", "duo", "duo", "kui", "gu", "gu", "xu", "xu", "rang", "gong", "gong", "xi", "xi", "luan", "luan", "rang", "rang", "man", "man", "xin", "xin", "yu", "yu"
+]
+
+const FIELDS = {
+    "title": "论文名称",
+    "author": "作者名单",
+    "journal": "文章发表的期刊或杂志名称",
+    "booktitle": "书名，论文集的名称或会议名称",
+    "month": "作品出版的月份",
+    "year": "出版的年份",
+    "volume": "卷号",
+    "number": "报告号或期刊文章的刊号",
+    "pages": "文章所在书籍或论文集中的页码或页范围",
+    "address": "出版商地址或会议举办的地址",
+    "organization": "组织或赞助会议或出版手册的机构名称，如 IEEE/ACM/Springer",
+    "annote": "注释",
+    "chapter": "书中的章节编号",
+    "edition": "书的版本号",
+    "editor": "书或者论文集的编辑名单",
+    "howpublished": "特别出版物的出版通知",
+    "institution": "发表及/或赞助报告的机构名称",
+    "note": "关于参考文献的说明",
+    "publisher": "出版社",
+    "school": "大学或学位授予机构名称",
+    "series": '书籍或论文集的系列名称',
+    "type": "技术报告或论文的类型",
+    "url": "网址",
+    'isbn': 'ISBN',
+    'issn': 'ISSN',
+    "date": "日期",
+    "doi": "",
+
+}
 
 const ENTRY = {
     "article": "any article published in a periodical like a journal article or magazine article",
@@ -484,27 +519,35 @@ const BIB = {
 class itex {
     constructor(text) {
         this.orgT = text;
-        this.T = text.trim();
-
-
+        this.T = this.__clear(text);
     };
 
-    get language() {
-        if (!this.hasOwnProperty("_language")) {
-            this._language = ''
-            if (/^[\u4e00-\u9fa5]/.test(this.T)) {
-                this._language = 'zh';
-            } else {
-                this._language = 'en';
+    __clear(text) {
+        text = text.trim()
+        let CharList = ['.', '。', '，', ',', '、', '；', ';', '：', ':', '？', '?', '！', '!', '=', '-', '+', '*', '&', '^', '%', '$', '#', '@', '~', '`', '|'];
+        // 循环判断 变量 t 的最后一个字符是否在 CharList 中
+        while (CharList.indexOf(text.slice(-1)) > -1) {
+            text = text.slice(0, -1);
+        }
+
+        while (CharList.indexOf(text[0]) > -1) {
+            text = text.slice(1,);
+        }
+
+
+        let t = text;
+        let r = /[\u4e00-\u9fa5]/g;
+        if (r.test(text)) {
+            t = t.replace(/([\u4e00-\u9fa5 ，。？！；：“”‘’《》【】（）])\s+([\u4e00-\u9fa5 ，。？！；：“”‘’《》【】（）])/g, "$1$2");
+            while (t != text) {
+                text = t;
+                t = t.replace(/([\u4e00-\u9fa5 ，。？！；：“”‘’《》【】（）])\s+([\u4e00-\u9fa5 ，。？！；：“”‘’《》【】（）])/g, "$1$2");
             }
         }
-        return this._language
+        return text;
     }
 
-    set language(v) {
-        this._language = v;
 
-    }
 
     get T() {
         return this._T;
@@ -525,6 +568,22 @@ class itex {
         this._T = text;
     }
 
+    get language() {
+        if (!this.hasOwnProperty("_language")) {
+            this._language = ''
+            if (/^[\u4e00-\u9fa5]/.test(this.T)) {
+                this._language = 'zh';
+            } else {
+                this._language = 'en';
+            }
+        }
+        return this._language
+    }
+
+    set language(v) {
+        this._language = v;
+
+    }
 
     _insert(f, b, T = this.T, _listT = this._listT) {
         //遍历 [a,1,] 数组,打印 数组元素的值和下标
@@ -585,7 +644,6 @@ class itex {
         return this;
     }
 
-
     /**
      * 首字母大写   
      */
@@ -645,14 +703,8 @@ class itex {
     }
 
     get clear() {
-        let CharList = ['.', '。', '，', ',', '、', '；', ';', '：', ':', '？', '?', '！', '!', '）', ')', '】', ']', '}', '>', '”', '"', '’', "'"];
-
-        let t = this.T;
-        // 循环判断 变量 t 的最后一个字符是否在 CharList 中
-        while (CharList.indexOf(t.slice(-1)) > -1) {
-            t = t.slice(0, -1);
-        }
         //如果变量t中 存在非 \& 的 & 符号,则将其替换为 \&
+        let t = this.T;
         t = t.replace(/(?<!\\)&/g, '\\&');
         t = t.replace(/(?<!\\)%/g, '\\%');
         t = t.replace(/(?<!\\)_/g, '\\_');
@@ -664,7 +716,9 @@ class itex {
     get url() {
         let t = this.T;
         // 使用 正则表达式 在t 中匹配https开头,连续的字符串,空格或换行 结束的字符串 
-
+        if (t.indexOf('\\url') > -1) {
+            return this;
+        }
         let url = t.split(" ")
         //如果url 元素包含http或https,则将其替换为 \url{网址}
         url = url.map((v) => {
@@ -680,13 +734,13 @@ class itex {
         return this;
     }
 
-
 }
 
 class idate extends itex {
     constructor(text) {
         super(text);
         this.month_dict = {
+
             "1": 'January',
             "1": 'February',
             "3": 'March',
@@ -699,6 +753,7 @@ class idate extends itex {
             "10": 'October',
             "11": 'November',
             "12": 'December'
+            //nbrylgptvc
         };
 
         // 创建月份英文单词的简写字典
@@ -713,72 +768,58 @@ class idate extends itex {
     }
 
     get date() {
-        let t = this.orgT.trim();
-        //检测t是否包含英文字母
-        if (/[a-zA-Z]/.test(t)) {
-            var r1 = /(?<month>\w*)\D*(?<day>\d{0,2})\D*(?<endday>\d{0,2})\D+(?<year>[1,2]?\d{3})/;
-            var r2 = /(?<year>[1,2]\d{3})\D+?(?<month>\w*)\D*(?<day>\d{0,2})\D*(?<endday>\d{0,2})/;
-        }
-        else {
-            var r1 = /(?<year>[1,2]\d{3})\D*(?<month>\d{0,2})\D*(?<day>\d{0,2})\D*(?<endday>\d{0,2})/;
-            var r2 = /(?<month>\d{0,2})\D*(?<day>\d{0,2})\D*(?<endday>\d{0,2})\D+?(?<year>[1,2]\d{3})/;
-        }
-        for (let r of [r1, r2]) {
-            if (r.test(t)) {
-                let a = r.exec(t);
+        let dai = this.orgT.trim();
+        var year = '';
+        var month = '';
+        var day = '';
+        var endday = '';
+        let r = /(?<year>[12]\d{3})/;
+        let a = r.exec(dai);
+        if (a != null) {
+            year = a.groups.year
+            dai = dai.replace(year, '');
+            r = /(?<month>[jfmasond][aepuco][nbrylgptvc])/i;
+            a = r.exec(dai);
+            if (a != null) {
+                month = a.groups.month;
+                dai = dai.replace(month, '');
+                month = month.slice(0, 3);
+                month = Object.keys(this.month_dict_abbr).find(key => this.month_dict_abbr[key] === month);
+            } else {
+                r = /(?<month>\d{1,2})/i;
+                a = r.exec(dai);
                 if (a != null) {
-                    var { year, month, day, endday } = a.groups;
+                    month = a.groups.month;
+                    dai = dai.replace(month, '');
                 }
             }
-        }
-        if (year == undefined) {
-            year = ''
+
+            r = /(?<day>\d{1,2})/i;
+            a = r.exec(dai);
+            if (a != null) {
+                day = a.groups.day;
+                dai = dai.replace(day, '');
+            }
+
+            r = /(?<endday>\d{1,2})/i;
+            a = r.exec(dai);
+            if (a != null) {
+                endday = a.groups.endday;
+                dai = dai.replace(endday, '');
+            }
+
+            if (month > 12) {
+                [month, day, endday] = [month, day, endday].sort((a, b) => a - b);
+                [day, endday] = [day, endday].sort((a, b) => a - b);
+            }
+            dai = [year, month, day, endday].filter((v) => v != '').join('-');
         }
         this._year = year;
-        if (month == undefined) {
-            month = ''
-        }
         this._month = month;
-        if (day == undefined) {
-            day = ''
-        }
         this._day = day;
-        if (endday == undefined) {
-            endday = ''
-        }
         this._endday = endday;
-        // console.log(year, month, day, endday);
-        //如果 month 是数字,且长度为1,则在前面补0
-        if (/[a-zA-Z]/.test(month)) {
-            for (let k in this.month_dict) {
-                let m = month.toLowerCase()
-                let tm = this.month_dict[k].toLowerCase();
-                // 如果  may 字符 出现在this.month_dict[k]中,不区分大小写
-                if (tm.indexOf(m) > -1) {
-                    this._month = k;
-                    break;
-                }
-            }
-        }
-        // this._month 长度为2 且第一个字符为0
-        if (this._month.length == 2 && this._month[0] == 0) {
-            this._month = this._month[1];
-        }
-        // 如果 this._month 转为数字类型
-        if (Number(this._month) > 12) {
-            this._month = "";
-        }
-        if (day > 31) {
-            this._day = "";
-        }
-        if (endday > 31) {
-            this._endday = "";
-        }
-        t = [this._year, this._month, this._day, this._endday];
-        // 去空元素
-        t = t.filter((i) => i != "");
-        t = t.join("-");
-        this.T = t;
+
+        this.T = dai;
         return this;
     }
 
@@ -799,22 +840,28 @@ class idate extends itex {
 
     }
 
-    get month_en_abbr() {
+    get month_abbr() {
         if (!this.hasOwnProperty('_month')) {
             this.date;
         }
         let mon = this._month;
         mon = this.month_dict_abbr[mon];
+        if (mon == undefined) {
+            mon = "";
+        }
         this.T = mon;
         return this;
     }
 
-    get month_en_full() {
+    get month_full() {
         if (!this.hasOwnProperty('_month')) {
             this.date;
         }
         let mon = this._month;
         mon = this.month_dict[mon];
+        if (mon == undefined) {
+            mon = "";
+        }
         this.T = mon;
         return this;
     }
@@ -856,21 +903,17 @@ class idate extends itex {
         if (!this.hasOwnProperty('_year')) {
             this.date;
         }
-        let [y, m, d] = ['', '', '', ''];
-        if (this._year != "") {
-            y = this._year + ","
-        };
-        if (this._month != "") {
-            m = this.month_en_abbr.str + "."
-        };
-        if (this._endday != "") {
-            d = this._day + "-" + this._endday
-        } else if (this._day != "") {
-            d = this._day
-        };
-        let t = [y, m, d];
-        //  [y, m, d + "-" + ed]去空格 去空元素
-        this.T = t.filter((i) => i != "").join(" ");
+
+        let y = this._year;
+        let m = this.month_abbr.str;
+        let d = this._day;
+        let ed = this._endday;
+
+        let t1 = [y, m].filter((i) => i != "").join(", ");
+        let t2 = [d, ed].filter((i) => i != "").join("-");
+        let t = [t1, t2].filter((i) => i != "").join(". ");
+
+        this.T = t;
         return this;
     }
 
@@ -878,32 +921,21 @@ class idate extends itex {
         if (!this.hasOwnProperty('_year')) {
             this.date;
         }
-        if (this._year != "") {
-            var y = this._year + ","
-        };
-        if (this._month != "") {
-            var m = this.month.month_en_full.str
-        };
-        if (this._endday != "") {
-            var d = this._day
-            var ed = this._endday
-            d = d + "-" + ed
-        } else if (this._day != "") {
-            var d = this._day
-        };
-        let t = [y, m, d];
-        //  [y, m, d + "-" + ed]去空格 去空元素
-        this.T = t.filter((i) => i != "").join(" ");
+
+        let y = this._year;
+        let m = this.month_full.str;
+        let d = this._day;
+        let ed = this._endday;
+
+        let t1 = [y, m].filter((i) => i != "").join(", ");
+        let t2 = [d, ed].filter((i) => i != "").join("-");
+        let t = [t1, t2].filter((i) => i != "").join(". ");
+
+        this.T = t;
 
         return this;
     }
 
-    get apa_year() {
-        if (!this.hasOwnProperty('_year')) {
-            this.date;
-        }
-        return this._year;
-    }
 }
 
 class iname extends itex {
@@ -1044,6 +1076,9 @@ class iname extends itex {
 
     }
 
+    /**
+     *  apa 格式要求下的,作者 list, 
+     */
     get apa_authors() {
         this.name = 'author';
         let name = this.name;
@@ -1051,6 +1086,9 @@ class iname extends itex {
         if (this.hasOwnProperty(apaField)) { return this[apaField] };
         this.__to_dict();
         let t_dic = this[`_${name}_dict`];
+        if (Object.keys(t_dic).length == 0) { return "" };
+
+
         let lan = this.language;
         let num_name = this[`_${name}_num`]
 
@@ -1112,6 +1150,8 @@ class iname extends itex {
         if (this.hasOwnProperty(apaField)) { return this[apaField] };
         this.__to_dict();
         let t_dic = this[`_${name}_dict`];
+        if (Object.keys(t_dic).length == 0) { return "" };
+
         let lan = this.language;
         let a = "";
 
@@ -1134,6 +1174,8 @@ class iname extends itex {
         if (this.hasOwnProperty(apaField)) { return this[apaField] };
         this.__to_dict();
         let t_dic = this[`_${name}_dict`];
+        if (Object.keys(t_dic).length == 0) { return "" };
+
         let lan = this.language;
         let a = "";
 
@@ -1149,6 +1191,9 @@ class iname extends itex {
         return this[apaField]
     }
 
+    /**
+     * apa 格式要求下的,出现在段落中的作者引用,
+     */
     get apa_citeauthor() {
         this.name = 'author';
         let name = this.name;
@@ -1156,6 +1201,9 @@ class iname extends itex {
         if (this.hasOwnProperty(apaField)) { return this[apaField] };
         this.__to_dict();
         let t_dic = this[`_${name}_dict`];
+        // 判断t_dic 为空字典
+        if (Object.keys(t_dic).length == 0) { return "" };
+
         let lan = this.language;
         let num_name = this[`_${name}_num`]
 
@@ -1187,15 +1235,12 @@ class iname extends itex {
 
 class anybib {
     constructor(txt) {
-        /**
-         * 原始输入的单个 bib 文本
-         */
         this.txt = txt;
-
         /**
          * 去空行和注释后的原始单个 bib 文本
          */
-        this.f_txt = txt.split('\n').filter(line => line.trim() !== '' && !line.trim().startsWith('%')).join('\n');
+        this.f_txt = this.__fjoin(txt)
+
         txt = this.f_txt;
         let entry = this.entryType;
         //如果 entry 不在 ENTRY的key中
@@ -1210,7 +1255,7 @@ class anybib {
             this[`org_${f}`] = '';
         });
 
-        const key_value = [...txt.matchAll(/(\w+)\s*=\s*["{](.*)["}]/g)].map(m => [m[1], m[2]]);
+        const key_value = [...txt.matchAll(/(\w+)\s*=\s*[{"'](.*)[}"']/g)].map(m => [m[1], m[2]]);
         key_value.forEach(([field, value]) => {
             field = field.toLowerCase().trim();
             value = value.trim();
@@ -1227,6 +1272,37 @@ class anybib {
                 }
             }
         });
+
+    }
+
+    __fjoin(t) {
+        t = t.split('\n')
+        t = t.filter(line => line.trim() !== '' && !line.trim().startsWith('%'));
+        //遍历t 数据, 如果元素去两边空格后, 最后一个字符不是逗号, 则与下一个元素合并
+
+        let b = {};
+        let n = 0;
+        for (let i = 0; i < t.length; i++) {
+            if (!Object.keys(b).includes(n.toString())) {
+                b[n] = [t[i]]
+            } else {
+                b[n].push(t[i])
+            }
+            if (t[i].trim().endsWith(',')) {
+                n += 1
+            }
+        }
+        t = ''
+        for (let i = 0; i < Object.keys(b).length; i++) {
+            // b[i]元素去左边空格
+            b[i] = b[i].map(x => x.trimLeft())
+            let c = b[i].join('')
+            // 去两边空格
+            c = c.trim()
+            c += '\n'
+            t += c
+        }
+        return t;
 
     }
 
@@ -1256,17 +1332,26 @@ class anybib {
         if (this[apaField] != '') { return this[apaField] };
 
         let t = this.f_txt;
-        t = t.match(/@\w+\s*[{]\s*(\w+)\s*,/)[1];
-        t = t.toLowerCase().trim();
+        try {
+            t = t.match(/@.*?{(.*?),/)[1];
+            t = t.toLowerCase().trim();
+        } catch (error) {
+            t = '';
+        }
         this[apaField] = t;
         return this[apaField];
     }
 
+    set citekey(v) {
+        let [apaField, _] = this.get_field('citekey', 'apa7', '');
+        this[apaField] = v;
+    }
+
     get author() {
         let [_, orgField] = this.get_field('author');
-
         return this[orgField];
     }
+
 
     get apa_authors() {
         let author = this.author;
@@ -1295,7 +1380,10 @@ class anybib {
         return this[apaField];
     }
 
-    set apa_citetxt(v) {
+    /**
+     * @parameter {string} v: 会增加到已有apa_citetxt 年份的文本内容后面 (比如, (author 2023) -> (author 2023b))
+     */
+    apa_citetxt_suffix(v) {
         let [apaField, _] = this.get_field('citetxt', 'apa7', '');
         let vaule = this.apa_citetxt;
         let apayear = vaule.match(/\d{4}/g)[0]
@@ -1446,18 +1534,17 @@ class anybib {
         return this[apaField];
     }
 
-    get apa_date() {
-        let [_, orgField] = this.get_field('date');
-        let date = this[orgField];
-        if (this[orgField] != '') { return this[orgField] };
+    // get apa_date() {
+    //     let [_, orgField] = this.get_field('date');
+    //     let date = this[orgField];
+    //     if (this[orgField] != '') { return this[orgField] };
 
-        this[orgField] = date;
-        return this[orgField]
-    }
+    //     this[orgField] = date;
+    //     return this[orgField]
+    // }
 
     get year() {
-        let [apaField, orgField] = this.get_field('year');
-
+        let [_, orgField] = this.get_field('year');
         let year = this[orgField];
         if (this[orgField] != '') {
             //如果没有在year中匹配到4个数字
@@ -1474,15 +1561,15 @@ class anybib {
         // 如果year 和 date 都为空，返回（出版中）
         // 如果year 为空，返回 date
         year = new idate(year);
-        value = year.str;
+        value = year.year.str;
         if (value == '') {
             if (language == 'zh') {
                 value = `出版中`
-
             } else if (language == 'en') {
                 value = "in press"
             }
         };
+
         this[orgField] = value
         return this[orgField];
     }
@@ -1502,8 +1589,6 @@ class anybib {
                 return "(in press)"
             }
         };
-        // 如果year 为空，返回 date
-        // if (this[apaField] != '') { return this[apaField] };
 
         let value = new idate(year);
         value.language = language;
@@ -1522,10 +1607,10 @@ class anybib {
         } else if (language == 'en') {
             switch (entryType) {
                 case 'misc':
-                    value = value.date_zh.cirBrackets.str;
+                    value = value.date_en_full.cirBrackets.str;
                     break;
                 case 'conference':
-                    value = value.date_zh.cirBrackets.str;
+                    value = value.date_en_full.cirBrackets.str;
                     break;
                 default:
                     value = value.year.cirBrackets.str;
@@ -1536,7 +1621,7 @@ class anybib {
         return this[apaField]
     }
 
-    set apa_year(v) {
+    apa_year_suffix(v) {
         let [apaField, _] = this.get_field('apayear');
         // console.log(this.apa_year,'eeeeeeeeeee')
         let vaule = this.apa_year;
@@ -2244,187 +2329,542 @@ class anybib {
     }
 }
 
-function formatbib(bibtxt) {
-    //分割bib txt,  以 @ 开头, 以 @ 结尾
-    const at_pos = [...bibtxt.matchAll(/@/g)].map(m => m.index);
-    let res = at_pos.map((pos, i) => bibtxt.slice(pos, at_pos[i + 1])).filter(x => x !== undefined);
+class read_bib {
+    constructor(bibtxt) {
+        this.bibtxt = bibtxt;
+        this.citekey_list = [];
+        this._recitekey = 0;
+        this.sortby = 'must';
 
-    // 计算元素出现在数组中多少次
-    function countOccurrences(arr, val) {
-        return arr.reduce((count, item) => {
-            return count + (item === val);
-        }, 0);
+
     }
 
-    let biblist = {
-        "en": {}, "zh": {}
-    };
-    let count_list = [];
-    let inds = 'abcdefghijklmnopqrstuvwxyz'
+    get recitekey() {
+        return this._recitekey;
+    }
 
-    //遍历 res 
-    for (let i = 0; i < res.length; i++) {
-        var tembib = res[i].split('\n').filter(line => line.trim() !== '' && !line.trim().startsWith('%')).join('\n');
+    set recitekey(val) {
+        this._recitekey = val;
+    }
 
-        let t = new anybib(tembib);
-        let n = 0;
-        //  实现排序,中文按笔画, 英文按字母
-        let s = t.apa_citetxt;
 
-        if (t.language == "zh") {
-            let num = strokes.indexOf(s[0])
-            if (num == -1) { num = 9999; }
-            let yearnum = t.year
-            if (isNaN(yearnum)) { yearnum = 9999; }
-            let numj = `${num}${yearnum}${n}`
+    get to_bbl() {
+        return this.__bbl();
+    }
 
-            if (biblist['zh'][s] == undefined) {
-                biblist['zh'][s] = [numj, '', t];
-            } else {
-                // 将重复的元素添加到 count_list 中
-                count_list.push(s)
-                n = countOccurrences(count_list, s);
-                numj = `${num}${yearnum}${n}`
-                let nn = inds[n]
-                // 找出 t.apa_year 字符串的连续4位数字, 并将其替换为 nn
-                t.apa_citetxt = nn
-                t.apa_year = nn
-                biblist['zh'][`${s}${nn}`] = [numj, nn, t];
+    get to_bib() {
+        return this.__bib();
+    }
+
+    get citekeys() {
+        return this.citekey_list.join(", ")
+    }
+
+    get to_yearbib() {
+        return this.__yearbib();
+    }
+
+    _formatbib(bibtxt) {
+        // 计算元素出现在数组中多少次
+        function countOccurrences(arr, val) {
+            return arr.reduce((count, item) => {
+                return count + (item === val);
+            }, 0);
+        }
+
+        //分割bib txt,  以 @ 开头, 以 @ 结尾
+        const at_pos = [...bibtxt.matchAll(/@/g)].map(m => m.index);
+        let res = at_pos.map((pos, i) => bibtxt.slice(pos, at_pos[i + 1])).filter(x => x !== undefined);
+
+        var bib_dict = {
+            "en": {}, "zh": {}
+        };
+
+        let count_list = [];
+        let inds = 'abcdefghijklmnopqrstuvwxyz'
+
+        let duplicate = [];
+        this.citekey_list = [];
+        //遍历 res 
+        for (let i = 0; i < res.length; i++) {
+            var tembib = res[i].split('\n').filter(line => line.trim() !== '' && !line.trim().startsWith('%')).join('\n');
+
+            let t = new anybib(tembib);
+
+            if (this.recitekey >= 1) {
+                // 将变量 i 转换为字符串,长度为3,不足前面补0
+                let ni = `${i}`.padStart(3, '0');
+                t.citekey = `ref${ni}`;
             }
-        } else {
-            s = s.toLowerCase();
-            let num = strokes.indexOf(s[0])
-            let num1 = strokes.indexOf(s[1])
-            if (num == -1) { num = 9999; }
-            if (num1 == -1) { num1 = 9999; }
-            let yearnum = t.year;
-            if (isNaN(yearnum)) { yearnum = 9999; }
-            let numj = `${num}${num1}${yearnum}${n}`;
+            // 用于输出所有的 citekey
+            this.citekey_list.push(t.citekey);
 
+            //  实现排序,中文按笔画, 英文按字母
+            let citetxt = t.apa_citetxt;
+            let title = t.apa_title;
 
-            if (biblist['en'][s] == undefined) {
-                biblist['en'][s] = [numj, '', t];
+            // 按 引用文本加标题判断是否重复, 如果重复, 则跳过
+            if (duplicate.includes(citetxt + title)) {
+                continue;
+            }
+            duplicate.push(citetxt + title);
+
+            //  主要用于判断作者年份都一样,但是标题不一样的情况,当0:a,1:b,...
+            let n = 0;
+
+            if (t.language == "zh") {
+                let num = strokes.indexOf(citetxt[0])
+                if (num == -1) { num = 9999; }
+                let yearnum = t.year
+                if (isNaN(yearnum)) { yearnum = 9999; }
+                let numj = `${num}${yearnum}${n}`
+
+                if (bib_dict['zh'][citetxt] == undefined) {
+                    t['year_suffix'] = "";
+                    bib_dict['zh'][citetxt] = [numj, t];
+                } else {
+                    // 将重复的元素添加到 count_list 中
+                    count_list.push(citetxt)
+                    n = countOccurrences(count_list, citetxt);
+                    numj = `${num}${yearnum}${n}`
+                    let nn = inds[n]
+                    // 找出 t.apa_year 字符串的连续4位数字, 并在年份的后面添加 nn
+                    t.apa_citetxt_suffix(nn);
+                    t.apa_year_suffix(nn);
+                    t['year_suffix'] = nn;
+                    bib_dict['zh'][`${citetxt}${nn}`] = [numj, t];
+                }
             } else {
-                // 将重复的元素添加到 count_list 中
-                count_list.push(s);
-                n = countOccurrences(count_list, s);
-                numj = `${num}${num1}${yearnum}${n}`;
+                citetxt = citetxt.toLowerCase();
+                let num = strokes.indexOf(citetxt[0])
+                let num1 = strokes.indexOf(citetxt[1])
+                if (num == -1) { num = 9999; }
+                if (num1 == -1) { num1 = 9999; }
+                let yearnum = t.year;
+                if (isNaN(yearnum)) { yearnum = 9999; }
+                let numj = `${num}${num1}${yearnum}${n}`;
 
-                let nn = inds[n]
-                // 找出 t.apa_year 字符串的连续4位数字, 并将其替换为 nn
-                t.apa_citetxt = nn
-                t.apa_year = nn
-                biblist['en'][`${s}${nn}`] = [numj, nn, t];
+
+                if (bib_dict['en'][citetxt] == undefined) {
+                    t['year_suffix'] = "";
+                    bib_dict['en'][citetxt] = [numj, t];
+                } else {
+                    // 将重复的元素添加到 count_list 中
+                    count_list.push(citetxt);
+                    n = countOccurrences(count_list, citetxt);
+                    numj = `${num}${num1}${yearnum}${n}`;
+
+                    let nn = inds[n]
+                    // 找出 t.apa_year 字符串的连续4位数字, 并在年份的后面添加 nn
+                    t.apa_citetxt_suffix(nn);
+                    t.apa_year_suffix(nn);
+                    t['year_suffix'] = nn;
+                    bib_dict['en'][`${citetxt}${nn}`] = [numj, t];
+                }
             }
         }
-    }
-    // count_list 去重
-    count_list = [...new Set(count_list)]
-    // 遍历 count_list, 如果元素在biblist['zh']的key中, 则是取出值,并删除
-    for (let i = 0; i < count_list.length; i++) {
-        if (count_list[i] in biblist['zh']) {
-            let tem = biblist['zh'][count_list[i]]
-            tem[2].apa_citetxt = 'a';
-            tem[2].apa_year = 'a';
-            biblist['zh'][`${count_list[i]}a`] = [tem[0], 'a', tem[2]]
-            delete biblist['zh'][count_list[i]]
+        // count_list 去重
+        count_list = [...new Set(count_list)]
+        // count_list 为空
+        if (count_list.length != 0) {
+            // 遍历 count_list, 如果元素在biblist['zh']的key中, 则是取出值,并删除
+            for (let i = 0; i < count_list.length; i++) {
+                if (count_list[i] in bib_dict['zh']) {
+                    let tem = bib_dict['zh'][count_list[i]]
+                    tem[1].apa_citetxt_suffix('a');
+                    tem[1].apa_year_suffix('a');
+                    tem[1]['year_suffix'] = 'a';
+                    bib_dict['zh'][`${count_list[i]}a`] = [tem[0], tem[1]]
+                    delete bib_dict['zh'][count_list[i]]
+                }
+                if (count_list[i] in bib_dict['en']) {
+                    let tem = bib_dict['en'][count_list[i]]
+                    tem[1].apa_citetxt_suffix('a');
+                    tem[1].apa_year_suffix('a');
+                    tem[1]['year_suffix'] = 'a';
+                    bib_dict['en'][`${count_list[i]}a`] = [tem[0], tem[1]]
+                    delete bib_dict['en'][count_list[i]]
+
+                }
+            }
         }
-        if (count_list[i] in biblist['en']) {
-            let tem = biblist['en'][count_list[i]]
-            tem[1] = 'a'
-            tem[2].apa_citetxt = 'a';
-            tem[2].apa_year = 'a';
-            biblist['en'][`${count_list[i]}a`] = [tem[0], 'a', tem[2]]
-            delete biblist['en'][count_list[i]]
+
+        // 重命名 citekey
+        if (this.recitekey > 0) {
+            bib_dict = this.__rename_citekey(bib_dict);
+        }
+
+
+        // 输出 bib_dict en 有多少个元素
+        this.numofzhbib = Object.keys(bib_dict['zh']).length;
+        this.numofenbib = Object.keys(bib_dict['en']).length;
+
+        return bib_dict;
+    }
+
+    __rename_citekey(bib_dict) {
+        let zh = bib_dict['zh'];
+        let en = bib_dict['en'];
+        this.citekey_list = [];
+        // 遍历 zh 的值, 将值的第二个元素的 citekey 重命名
+        let o = 0;
+        for (let i = 0; i < Object.values(zh).length; i++) {
+            let tem = Object.values(zh)[i][1];
+            let s = tem.apa_citetxt[0];
+            s = strokes.indexOf(s)
+            s = strokes_py[s];
+            if (s == undefined) {
+                s = "undefined"
+            }
+            let syear = tem.year;
+            //从 syear 中提取4个数字
+            let reg = /\d{4}/;
+            syear = reg.exec(syear);
+            if (syear == null) {
+                syear = "9999"
+            } else {
+                syear = syear[0]
+            }
+
+
+            let nn = tem.year_suffix;
+
+            tem.citekey = `${s}${syear}${nn}`;
+            // 
+            if (this.citekey_list.includes(tem.citekey)) {
+                o += 1;
+                tem.citekey = `${s}${o}${syear}${nn}`;
+            }
+            this.citekey_list.push(tem.citekey)
+            Object.values(zh)[i][1] = tem;
+
+        }
+        for (let i = 0; i < Object.values(en).length; i++) {
+            let tem = Object.values(en)[i][1];
+            let s = tem.apa_citetxt;
+            if (s.indexOf(",")) {
+                s = s.split(",")[0];
+                if (s.indexOf(" ")) {
+                    s = s.split(" ")[0].toLowerCase();
+                }
+            } else {
+                s = 'undefined'
+            }
+            let syear = tem.year;
+            let reg = /\d{4}/;
+            syear = reg.exec(syear);
+            if (syear == null) {
+                syear = "9999"
+            } else {
+                syear = syear[0]
+            }
+            let nn = tem.year_suffix;
+            tem.citekey = `${s}${syear}${nn}`;
+            if (this.citekey_list.includes(tem.citekey)) {
+                o += 1;
+                tem.citekey = `${s}${o}${syear}${nn}`;
+            }
+            this.citekey_list.push(tem.citekey)
+
+            Object.values(en)[i][1] = tem;
+        }
+
+
+
+        return bib_dict
+    }
+
+    __sort_must() {
+        let bib_dict = this.bib_dict;
+        let biblist_zh = '';
+        let biblist_en = '';
+        biblist_zh = Object.entries(bib_dict['zh']).sort((a, b) => a[1][0] - b[1][0]).map(x => x[1][1])
+        biblist_en = Object.entries(bib_dict['en']).sort((a, b) => a[1][0] - b[1][0]).map(x => x[1][1])
+        return [biblist_zh, biblist_en]
+    }
+
+    __sort_year() {
+        let bib_dict = this.bib_dict;
+        // biblist['zh'] 与 biblist['en']  合并
+        let biblist_all = Object.assign(bib_dict['zh'], bib_dict['en'])
+        // biblist_all 取出所值的第三个元素
+        let biblist_all_values = Object.values(biblist_all).map(x => x[1])
+        // 遍历 biblist_all_values 的元素
+        let biblist_all_values_sort = biblist_all_values.sort((a, b) => {
+            // 如果 a.year 与 b.year 都是数字, 则按照数字排序
+            if (!isNaN(a.year) && !isNaN(b.year)) {
+                return b.year - a.year
+            }
+            // 如果 a.year 与 b.year 都不是数字, 则按照字符串排序
+            if (isNaN(a.year) && isNaN(b.year)) {
+                return a.year.localeCompare(b.year)
+            }
+            // 如果 a.year 是数字, b.year 不是数字, 则 a.year 排在 b.year 的后面
+            if (!isNaN(a.year) && isNaN(b.year)) {
+                return 1
+            }
+            // 如果 a.year 不是数字, b.year 是数字, 则 a.year 排在 b.year 的前面
+            if (isNaN(a.year) && !isNaN(b.year)) {
+                return -1
+            }
+        })
+        return [biblist_all_values_sort, '']
+    }
+
+    __sort_citekey() {
+        let bib_dict = this.bib_dict;
+        // biblist['zh'] 与 biblist['en']  合并
+        let biblist_all = Object.assign(bib_dict['zh'], bib_dict['en'])
+        // biblist_all 取出所值的第三个元素
+        let biblist_all_values = Object.values(biblist_all).map(x => x[1])
+        // 遍历 biblist_all_values 的元素
+        let biblist_all_values_sort = biblist_all_values.sort((a, b) => {
+            // 如果 a.year 与 b.year 都是数字, 则按照数字排序
+            if (!isNaN(a.citekey) && !isNaN(b.year)) {
+                return b.citekey - a.citekey
+            }
+            // 如果 a.citekey 与 b.citekey 都不是数字, 则按照字符串排序
+            if (isNaN(a.citekey) && isNaN(b.citekey)) {
+                return a.citekey.localeCompare(b.citekey)
+            }
+            // 如果 a.citekey 是数字, b.citekey 不是数字, 则 a.citekey 排在 b.citekey 的后面
+            if (!isNaN(a.citekey) && isNaN(b.citekey)) {
+                return 1
+            }
+            // 如果 a.citekey 不是数字, b.citekey 是数字, 则 a.citekey 排在 b.citekey 的前面
+            if (isNaN(a.citekey) && !isNaN(b.citekey)) {
+                return -1
+            }
+        })
+        return [biblist_all_values_sort, '']
+    }
+
+    __sort() {
+        switch (this.sortby) {
+            case 'must':
+                return this.__sort_must()
+            case 'year':
+                return this.__sort_year()
+            case 'citekey':
+                return this.__sort_citekey()
         }
     }
 
-    // biblist['zh'] 按照 value 的第一个元素排序后,并返回第三个元素
-    let biblist_zh = Object.entries(biblist['zh']).sort((a, b) => a[1][0] - b[1][0]).map(x => x[1][2])
-    let biblist_en = Object.entries(biblist['en']).sort((a, b) => a[1][0] - b[1][0]).map(x => x[1][2])
-    // 返回 biblist_zh 值的第三个元素
-    return [biblist_zh, biblist_en]
+    __bbl() {
+        let bibtxt = this.bibtxt
+
+        this.bib_dict = this._formatbib(bibtxt);
+
+        let [biblist_zh, biblist_en] = this.__sort();
+
+        let zhbbl = [];
+        for (let i = 0; i < biblist_zh.length; i++) {
+            zhbbl.push(biblist_zh[i].output_bbl);
+        }
+
+        let enbbl = [];
+        for (let i = 0; i < biblist_en.length; i++) {
+            enbbl.push(biblist_en[i].output_bbl);
+        }
+
+        let a = `\\bibitem[zh, 2019]{zh2019}{\\fontsize{16pt}{\\baselineskip}\\selectfont{中文部分：}}`
+        a += `\n{\\large\\linespread{1.485}\\selectfont \n`
+
+        let b = `}`
+        if (zhbbl.length > 0) {
+            //  在 zhbbl 数组, 第一个位置上 添加元素
+            zhbbl.unshift(a);
+            //  在 zhbbl 数组, 最后一个位置上 添加元素
+            zhbbl.push(b);
+        }
+
+        a = `\\bibitem[En, 2019]{en2019}{\\fontsize{16pt}{\\baselineskip}\\selectfont{英文部分：}}`
+        a += `\n{\\normalsize\\linespread{1.083333333333}\\selectfont \n`
+
+        b = `} `
+        if (enbbl.length > 0) {
+            enbbl.unshift(a);
+            enbbl.push(b);
+        }
+
+        let allbll = [zhbbl.join('\n'), enbbl.join('\n')]
+        //allbbl 去空元素
+        allbll = allbll.filter(line => line.trim() !== '' && !line.trim().startsWith('%'));
+        allbll = allbll.join('\n\n\\clearpage\n')
+        let bbl = `\\begin{thebibliography} {} \n`
+        bbl += allbll
+        bbl += `\n\n\\end{thebibliography} `;
+        return bbl
+    }
+
+    __bib() {
+        let bibtxt = this.bibtxt
+
+        this.bib_dict = this._formatbib(bibtxt);
+
+        let [biblist_zh, biblist_en] = this.__sort();
+
+        let zhbbl = [];
+        if (biblist_zh != '') {
+            for (let i = 0; i < biblist_zh.length; i++) {
+                zhbbl.push(biblist_zh[i].output_bib);
+            }
+        }
+        let enbbl = [];
+        if (biblist_en != '') {
+            for (let i = 0; i < biblist_en.length; i++) {
+                enbbl.push(biblist_en[i].output_bib);
+            }
+        }
+        // zhbbl & enbbl 合并输出字符
+        let allbll = [zhbbl.join('\n'), enbbl.join('\n')]
+        //allbbl 去空元素
+        allbll = allbll.filter(line => line.trim() !== '' && !line.trim().startsWith('%'));
+        allbll = allbll.join('\n\n')
+        return allbll
+    }
 }
 
-function output_bbl(biblist_zh, biblist_en) {
-    let zhbbl = [];
-    for (let i = 0; i < biblist_zh.length; i++) {
-        zhbbl.push(biblist_zh[i].output_bbl);
-    }
 
-    let enbbl = [];
-    for (let i = 0; i < biblist_en.length; i++) {
-        enbbl.push(biblist_en[i].output_bbl);
-    }
 
-    let a = `\\bibitem[zh, 2019]{zh2019}{\\fontsize{16pt}{\\baselineskip}\\selectfont{中文部分：}}
-    {\\large\\linespread{1.485}\\selectfont 
-    
-    `
-    let b = `}`
-    if (zhbbl.length > 0) {
-        //  在 zhbbl 数组, 第一个位置上 添加元素
-        zhbbl.unshift(a);
-        //  在 zhbbl 数组, 最后一个位置上 添加元素
-        zhbbl.push(b);
-    }
 
-    a = `\\bibitem[En, 2019]{en2019}{\\fontsize{16pt}{\\baselineskip}\\selectfont{英文部分：}}
-    {\\normalsize\\linespread{1.08333333333333}\\selectfont
-    `
-    b = `}`
-    if (enbbl.length > 0) {
-        enbbl.unshift(a);
-        enbbl.push(b);
-    }
 
-    let allbll = [zhbbl.join('\n'), enbbl.join('\n')]
-    //allbbl 去空元素
-    allbll = allbll.filter(line => line.trim() !== '' && !line.trim().startsWith('%'));
-    allbll = allbll.join('\n\n\\clearpage\n')
-    let bbl = `\\begin{thebibliography}{}\n`
-    bbl += allbll
-    bbl += `\n\n\\end{thebibliography}`;
-    return bbl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function processText(rename) {
+    // 获取左侧文本输入框的文本
+    var text = document.getElementById("left-input").value;
+    //使用正则表达式, 判断 text 是否包含@符号
+    var t = /@.*?/gm;
+
+    if (!t.test(text)) {
+        document.getElementById("outputinfo").textContent = "无效或不完的 bib 信息,请重新输入!";
+        return;
+    }
+    const converter = OpenCC.Converter({ from: 'cn', to: 'hk' });
+    text = converter(text);
+
+
+    let a = new read_bib(text)
+    // a.sortby = 'year'
+    a.recitekey = rename
+    // a.sortby = 'author'
+    // a.recitekey = 1;
+    let bibt = a.to_bib;
+    let bblt = a.to_bbl;
+    // 将排序后的数组输出成文本，显示在右侧文本输入框中
+    document.getElementById("left-input").value = bibt;
+    document.getElementById("right-input").value = bblt;
+
+    let citekeys = a.citekeys;
+    document.getElementById("citekeys").value = citekeys;
+
+    let zhnum = a.numofzhbib;
+    let endum = a.numofenbib;
+    let info = `成功!  中文文献数量:${zhnum}; 英文文献数量:${endum}`
+    document.getElementById("outputinfo").textContent = info;
+    // document.getElementById("infop").textContent = info;
+
 }
 
-function output_bib(biblist_zh, biblist_en) {
-    let zhbbl = [];
-    for (let i = 0; i < biblist_zh.length; i++) {
-        zhbbl.push(biblist_zh[i].output_bib);
-    }
+var modal = document.createElement('div');
+modal.innerHTML = `
+<div id = "must">
+<div class="fade modal-backdrop in"></div>
+<div id="modalxx" role="dialog" tabindex="-1" class="fade in modal" style="display: block;">
+  <div class="modal-dialog" style="width:70%">
+    <div  class="modal-content" role="document" >
+        <div class="modal-header">
+            <button id="mustx" class="close"> × </button>
+            <h3 class="modal-title">MUST bib2bbl ver 1.0.1 &nbsp;&nbsp;<a class="fa fa-github fa-fw" style="font-size: 14px;"></a><a href="https://github.com/iihciyekub/must-thesis-tools" target="_blank" style="font-size: 14px;">GitHub @Yongjian,Li 欢迎参与维护.</a></h3>
+            <p class="modal-title">&nbsp&nbsp&nbsp&nbsp 步骤1: 将 bib 复制到左边的文本框中;</p>
+            <p class="modal-title">&nbsp&nbsp&nbsp&nbsp 步骤2: 将右边的文本框中文本全部复制到 "ref.bbl" 文件中;</p>
+            <p class="modal-title">&nbsp&nbsp&nbsp&nbsp 备注: 如果您的 LaTeX 项目根目录中没有 "ref.bbl" 文件,请自行创建.</p>
+        </div>
+      <div class="modal-body-share modal-body">
+        <div class="container-fluid">
+            <div class="buthere"  >
+                <button id="copybib" class="btn btn-primary l" >copy bib</button>
+                <button id="copybbl" class="btn btn-primary l" >copy bbl</button>
+                <button id="copycitekeys" class="btn btn-primary l" >copy citekeys</button>
+                </div>
 
-    let enbbl = [];
-    for (let i = 0; i < biblist_en.length; i++) {
-        enbbl.push(biblist_en[i].output_bib);
-    }
-    // zhbbl & enbbl 合并输出字符
-    let allbll = [zhbbl.join('\n'), enbbl.join('\n')]
-    //allbbl 去空元素
-    allbll = allbll.filter(line => line.trim() !== '' && !line.trim().startsWith('%'));
-    allbll = allbll.join('\n\n')
-    return allbll
-}
+            <div style="display: flex; justify-content: center;">
+                <textarea id="left-input" spellcheck="false"  placeholder="步骤1: 在这里输入bib"></textarea>
+                <textarea id="right-input" spellcheck="false" placeholder="步骤2: 这里将自动得到符合澳门科技大学论文文献排版要求的 bbl"></textarea>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <textarea id="citekeys" spellcheck="false" placeholder="这里将得到所有citekeys, 如果你不需要对 citekey 进行自动重命名处理,请忽略!!"></textarea>
+            </div>  
+            
 
-
+            <div class="buthere" style="width: 15%; margin-top: 5px;">
+                <button id="copyclear" class="btn btn-primary l" >clear</button>
+                <button id="copyrecitekeys" class="btn btn-primary l"  >rename citekey</button>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer-share modal-footer" style="height:60px">
+        <div class="modal-footer-left">
+            <p id='outputinfo'></p>
+        </div>
+        <div class="modal-footer-right">
+            <button id="mustx2" type="button" class="btn-secondary btn" style="height:35px">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+`
+document.body.appendChild(modal);
 
 
 
 
 const converter = OpenCC.Converter({ from: 'cn', to: 'hk' });
+
+
 const toolbarLeftNode = document.querySelector('.toolbar-right');
 var firstToolbarItem = document.querySelector(".toolbar-item");
 
 // 如果找到了该元素，则复制插入到当前页面
 if (firstToolbarItem) {
-
     //  复制 firstToolbarItem 节点
     var clone1 = firstToolbarItem.cloneNode(true);
     // 获取 cloneElement 节点下 button i
     clone1.querySelector('button i').className = 'fa fa-fw fa-language';
     clone1.querySelector('.toolbar-label').innerText = '简转繁';
-
-
 
     var clone2 = firstToolbarItem.cloneNode(true);
     clone2.querySelector('button i').className = 'fa fa-code me-1';
@@ -2434,18 +2874,13 @@ if (firstToolbarItem) {
     toolbarLeftNode.insertBefore(clone2, toolbarLeftNode.childNodes[1]);
     toolbarLeftNode.insertBefore(clone1, toolbarLeftNode.childNodes[1]);
 
-
     // 获取 cloneElement 节点下 button
     var button = clone1.querySelector('button');
-    // 引入 opencc.js
-    // 当 button 被点击执行方法
     button.onclick = function () {
         //获取 cm-content cm-lineWrapping 的所有 div 与 span 子节点
         var divs = document.querySelectorAll('.cm-content.cm-lineWrapping div, .cm-content.cm-lineWrapping span');
         //获取 divs 的所有文本
         var textss = document.querySelector('.cm-content.cm-lineWrapping').innerText;
-
-
         // divs =  converter(divs);
         //遍历所有子节点
         for (var i = 0; i < divs.length; i++) {
@@ -2459,7 +2894,6 @@ if (firstToolbarItem) {
                 divs[i].innerText = newText;
             }
         }
-
         //将n 写入剪贴板中
         navigator.clipboard.writeText(textss).then(function () {
             console.log('Async: Copying to clipboard was successful!');
@@ -2470,35 +2904,145 @@ if (firstToolbarItem) {
     };
 
 
+    // 显示 bib2bbl 窗口
     var button2 = clone2.querySelector('button');
-    button2.onclick = function () {
-        // 当前系统鼠标已选中文本,将这些文本复制到剪贴板中
-        // 获取当前鼠标已选中的文本
-        // 对当前选中的文本进行复制 
-
-        //获取当前系统的剪贴板内容,将其保存为变量 text
-        // 读取剪贴板内容并将其转换为文本
-        var bib = '';
-        navigator.clipboard.readText()
-            .then(function (text) {
-                // 将文本保存到变量 bib 中
-                bib = text;
-                var [biblist_zh, biblist_en] = formatbib(bib)
-                let zhn = biblist_zh.length;
-                let enn = biblist_zh.length;
-                var bbl = output_bbl(biblist_zh, biblist_en)
+    var div = document.getElementById('must');
+    button2.addEventListener('click', function () {
+        div.style.display = 'block';
+        document.getElementById("outputinfo").textContent = "";
+    });
 
 
-                navigator.clipboard.writeText(bbl)
-                    .then(function () {
-                        alert(`功能:获取剪贴板的 bib 文件, 自动转换为 符合澳门科技大学毕业论文文献排版格式要求的 bbl 文本;\n\n以下是转换结果\n中文文献数量:${zhn}\n英文献数量:${enn}\nbbl 已复制到剪贴板!\n将结果粘贴到项目根目录下 ref.bbl 文件 (如果没有该文件请自行创).`);
-                    })
-                    .catch(function (err) {
-                        alert('无法复制文本到剪贴板: ', err);
-                    });
-            })
-            .catch(function (err) {
-                alert('无法读取剪贴板内容: ', err);
+
+    //  执行bib 转换 bbl
+    const leftinput = document.getElementById('left-input');
+    leftinput.addEventListener('input', function () {
+        processText(0)
+    });
+
+
+
+
+    var copyclear = document.getElementById('copyclear');
+    copyclear.addEventListener('click', function () {
+        document.getElementById("left-input").value = "";
+        document.getElementById("right-input").value = "";
+        document.getElementById("citekeys").value = "";
+        document.getElementById("outputinfo").textContent = "";
+        // document.getElementById("infop").textContent = "";
+    });
+
+
+
+    // 复制所有 citekeys
+    var copycitekeys = document.getElementById('copycitekeys');
+    copycitekeys.addEventListener('click', function () {
+        let t = document.getElementById("citekeys").value;
+        if (t != "") {
+            navigator.clipboard.writeText(t).then(function () {
+                console.log('Async: Copying to clipboard was successful!');
+            }, function (err) {
+                console.error('Async: Could not copy text: ', err);
             });
-    }
+            document.getElementById("outputinfo").textContent = "已复制 citekeys";
+        } else {
+            document.getElementById("outputinfo").textContent = "citekeys 没有内容可复制!";
+
+        }
+    });
+
+
+
+    // 复制所有 bib
+    var copybib = document.getElementById('copybib');
+    copybib.addEventListener('click', function () {
+        let t = document.getElementById("left-input").value;
+        if (t != "") {
+            navigator.clipboard.writeText(t).then(function () {
+                console.log('Async: Copying to clipboard was successful!');
+            }, function (err) {
+                console.error('Async: Could not copy text: ', err);
+            });
+            document.getElementById("outputinfo").textContent = "已复制格式后的 bib!";
+        } else {
+            document.getElementById("outputinfo").textContent = "bib 没有内容可复制!";
+
+        }
+
+    });
+
+
+
+
+
+    // 复制所有 bbl
+    var copybbl = document.getElementById('copybbl');
+    copybbl.addEventListener('click', function () {
+        let t = document.getElementById("right-input").value;
+        if (t != "") {
+            navigator.clipboard.writeText(t).then(function () {
+                console.log('Async: Copying to clipboard was successful!');
+            }, function (err) {
+                console.error('Async: Could not copy text: ', err);
+            });
+            document.getElementById("outputinfo").textContent = "已复制格式后的 bbl!";
+        } else {
+            document.getElementById("outputinfo").textContent = "bbl 没有内容可复制!";
+
+        }
+
+
+    });
+
+
+
+
+
+
+
+    // 复制所有 bbl
+    var copyrecitekeys = document.getElementById('copyrecitekeys');
+    copyrecitekeys.addEventListener('click', function () {
+        let t = document.getElementById("left-input").value;
+        if (t != "") {
+            processText(1)
+            document.getElementById("outputinfo").textContent = "已重命名所有 citekeys 并生成新的 bbl";
+        } else {
+            document.getElementById("outputinfo").textContent = "bib 没有内容可执行!";
+
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+
+    var mustx = document.getElementById('mustx');
+
+    mustx.addEventListener('click', function () {
+        div.style.display = 'none';
+
+    });
+
+
+    var mustx2 = document.getElementById('mustx2');
+    mustx2.addEventListener('click', function () {
+        div.style.display = 'none';
+    });
+
+    var modalxx = document.getElementById('modalxx');
+    modalxx.addEventListener("click", function () {
+        // 在鼠标移出 div 元素时执行操作
+        console.log(0000000000)
+    });
+
+
+
+
 }

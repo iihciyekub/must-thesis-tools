@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>隐私权政策</title>
+  </head>
+  <body>
+    <h1>隐私权政策</h1>
+    <p>感谢您使用我们的扩展程序。我们十分重视用户的隐私权，本隐私权政策将告诉您我们如何收集、使用、披露、处理和保护您的个人信息。请仔细阅读以下内容。
+    </p>
+    <h2>收集的信息</h2>
+    <p>我们不会收集您的个人信息。我们的扩展程序不会访问您的浏览器历史记录、书签和,但是会在您使用期间访问特定 overleaf 网页以便实现相关工作效率提升的功能。</p>
+    <h2>使用的信息</h2>
+    <p>我们不会使用您的个人信息。我们不会使用您的浏览器历史记录、书签来实现相关功能。</p>
+    <h2>共享的信息</h2>
+    <p>我们不会与任何第三方共享您的个人信息。我们不会将您的浏览器历史记录、书签和标签共享给任何第三方。</p>
+    <h2>安全</h2>
+    <p>我们采取适当的安全措施来保护您的个人信息。我们使用的所有数据传输都通过 SSL 加密。但请注意，由于互联网的本质，无法保证通过互联网传输的数据的绝对安全。</p>
+    <h2>联系我们</h2>
+    <p>开发者邮箱: iihciyekub@gmail.com</p>
+    <p>本隐私权政策最后更新于 2023 年 4 月 7 日。</p>
+
+        <h1>Privacy Policy</h1>
+        <p>Thank you for using our extension. We take your privacy seriously and this privacy policy outlines how we collect, use, disclose, process, and protect your personal information. Please read this carefully.</p>
+        <h2>Information Collection</h2>
+        <p>We do not collect any personal information. Our extension does not access your browser history, bookmarks, or tabs, but it may access specific overleaf web pages during your use in order to provide relevant efficiency-improving features.</p>
+        <h2>Information Usage</h2>
+        <p>We do not use any personal information. We do not use your browser history, bookmarks, or tabs to provide any features.</p>
+        <h2>Information Sharing</h2>
+        <p>We do not share any personal information with any third parties. We do not share your browser history, bookmarks, or tabs with any third parties.</p>
+        <h2>Security</h2>
+        <p>We take appropriate security measures to protect your personal information. All data transmissions we use are encrypted via SSL. However, please note that due to the nature of the internet, we cannot guarantee the absolute security of data transmitted over the internet.</p>
+        <h2>Contact Us</h2>
+        <p>Developer email: iihciyekub@gmail.com</p>
+        <p>This privacy policy was last updated on April 7, 2023.</p>
+
+
+
+
+  </body>
+</html>
