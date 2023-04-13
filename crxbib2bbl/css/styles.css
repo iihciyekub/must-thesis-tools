@@ -7,7 +7,6 @@
     justify-content: space-between;
     width: 35%;
     margin-left: 0;
-    margin-bottom: 5px;
 }
 
 .btn.btn-primary.l {
@@ -15,6 +14,8 @@
     border-radius: 5px;
     margin-right: 5px;
     min-height: 25 px;
+    margin-top: 5px;
+
 }
 
 
@@ -23,30 +24,59 @@
     border-radius: 5px;
     margin-left: 5px;
     min-height: 25 px;
+    margin-top: 5px;
+
 }
 
-#copyclear{
+#copyclear {
     background-color: rgb(20, 20, 20);
 }
 
-#copyrecitekeys{
+#copyrecitekeys {
     background-color: rgb(175, 61, 99);
 }
 
+#cliinput {
+    min-height: 80px;
+    font-size: 12px;
+    width: 35%;
+    margin-right: 4px;
+}
+
+#clioutput {
+    min-height: 80px;
+    font-size: 12px;
+    width: 65%;
+    margin-left: 4px;
+}
+
 #left-input {
-    min-height: 250px;
+    min-height: 150px;
     font-size: 13px;
     width: 35%;
     margin-right: 4px;
 }
 
 #right-input {
-    min-height: 250px;
+    min-height: 150px;
     font-size: 13px;
     width: 65%;
     margin-left: 4px;
 }
 
+a {
+    color: #3265b2;
+    text-decoration: none;
+}
+
+.btn.r {
+    margin-left: auto;
+    border-radius: 5px;
+    margin-left: 5px;
+    min-height: 25 px;
+    color: #080808;
+    background-color: #f09124;
+}
 
 #citekeys {
     font-size: 13px;
