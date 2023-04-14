@@ -1,6 +1,22 @@
+## 鸣谢 
+
+|      | 开 源工具 | GitHub                                                       | call                                                         |
+| ---- | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1    | CNChar    | https://github.com/theajack/cnchar                           | `cnchar.spell()``cnchar.stroke()`                            |
+|      |           | https://theajack.github.io/cnchar/                           | CNChar 在线文档                                              |
+|      |           | [cnchar.min.js](https://fastly.jsdelivr.net/npm/cnchar/cnchar.min.js) | 主要调用js                                                   |
+|      |           | [cnchar.trad.min.js](https://fastly.jsdelivr.net/npm/cnchar-trad/cnchar.trad.min.js) | cnchar 繁体功能库                                            |
+| 2    | OpenCC    | https://github.com/BYVoid/OpenCC                             | `OpenCC.Converter({ from: 'hk', to: 'cn' })`<br />`OpenCC.Converter({ from: 'cn', to: 'hk' })` |
+|      |           | [opencc.full.js](https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/full.js) | 主要调用js, 支持简繁互转                                     |
+|      |           | [opencc-js CDN files](https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/) | OpenCC CDN 文件目录                                          |
 
 
-## bib2bbl
+
+## Overleaf s2t/bib2bbl 1.50.5
+
+除了提供简繁体互转功能之外，它可以将 bib 文献数据处理成符合 澳门科技大学 研究生毕业论文 文献排版格式要求的 bbl 文件。
+
+
 
 这是一个能够将bib 文献数据 通过 js 自动转换为符合澳门科技大学关于研究生毕业论文文献排版要求(apa7)的自动化工具.
 
@@ -11,7 +27,7 @@
 
 ![image-20230414045357039](readme.assets/image-20230414045357039.png)
 
-![image-20230414045430203](readme.assets/image-20230414045430203.png)
+![image-20230414130210620](readme.assets/image-20230414130210620.png)
 
 
 

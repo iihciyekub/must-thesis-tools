@@ -1,3 +1,4 @@
+
 const BIB = {
     'article': {
         'N': ['author', 'year', 'title', 'journal'],
@@ -2037,7 +2038,9 @@ class anybib {
 
 class read_bib {
     constructor(bibtxt) {
-        bibtxt = cnchar.convert.simpleToTrad(bibtxt);
+        // console.log(cn2hk('汉语，门槛'))
+
+        bibtxt = cn2hk(bibtxt);
         this.bibtxt = bibtxt;
         this.citekey_list = [];
         this._recitekey = 0;
@@ -2319,6 +2322,4 @@ class read_bib {
         return allbll
     }
 }
-
-
 
