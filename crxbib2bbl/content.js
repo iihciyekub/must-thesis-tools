@@ -2,7 +2,8 @@
 var modal = document.createElement('div');
 modal.innerHTML = `
 <div id="must">
-	<div class="fade modal-backdrop in"></div>
+	<div class="fade modal-backdrop in">
+    </div>
 	<div id="modalxx" role="dialog" tabindex="-1" class="fade in modal" style="display: block;">
 		<div class="modal-dialog i" >
 			<div class="modal-content" role="document">
@@ -19,7 +20,7 @@ modal.innerHTML = `
 				<div class="modal-header">
 					<div class="container-fluid">
 						<h4 class="modal-title"> - bib 轉 bbl</h4>
-						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp 步驟1: 將 bib 複製到左邊的文本框中; 左邊文本框右擊時，會清空文本。</p>
+						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp 步驟1: 將 bib 输入到左邊的文本框中; <a id="copyclearbibbbl" style="font-size: 14px;">注意:右击文本框清空文本。</a></p>
 						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp 步驟2: 將右邊的文本框中文本全部複製到 "ref.bbl" 文件中;</p>
 						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp <span style="color:blue">備註: 如果您的 LaTeX 項目根目錄中沒有 "ref.bbl" 文件,請自行創建. </span ></p>
 						<div style="display: flex; justify-content: center;">
@@ -40,7 +41,7 @@ modal.innerHTML = `
 				</div>
 				<div class="modal-header">
 					<h4 class="modal-title"> - 簡 轉 繁</h4>
-						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp (任何情況下) 左邊文本框輸出简体, 右邊文本框輸出繁體。<span style="color:blue"> 左右文本框鼠标右擊時會清空文本。</span></p>
+						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp (任何情況下) 左邊文本框显示简体, 右邊显示繁體。<a id="copyclearst" style="font-size: 14px;">注意:右击文本框清空文本。</a></p>
 
 					<div class="container-fluid">
 						<div style="display: flex; justify-content: center;">
@@ -518,8 +519,8 @@ function processText(rename = 0) {
 
     if (!t.test(text)) {
         document.getElementById("outputinfo").textContent = "無傚或不完的 bib 信息,請重新輸入!";
-        document.getElementById("left-input").value=''
-        document.getElementById("right-input").value=''
+        document.getElementById("left-input").value = ''
+        document.getElementById("right-input").value = ''
         return;
     }
 
@@ -582,6 +583,10 @@ function clearbibbbl() {
     document.getElementById("citekeys").value = "";
 }
 
+function clearst() {
+    document.getElementById("cliinput").value = "";
+    document.getElementById("clioutput").value = "";
+}
 
 var leftinput = document.getElementById("left-input")
 leftinput.addEventListener('input', function () {
@@ -625,6 +630,16 @@ copyclear.addEventListener('click', function () {
     clearbibbbl()
 });
 
+
+var copyclearbibbbl = document.getElementById("copyclearbibbbl")
+copyclearbibbbl.addEventListener('click', function () {
+    clearbibbbl()
+});
+
+var copyclearst = document.getElementById("copyclearst")
+copyclearst.addEventListener('click', function () {
+    clearst()
+});
 
 var recitekeys = document.getElementById("recitekeys")
 recitekeys.addEventListener('click', function () {
@@ -682,8 +697,7 @@ clioutput.addEventListener('input', function () {
 });
 clioutput.addEventListener('contextmenu', (event) => {
     event.preventDefault(); //阻止默認事件
-    document.getElementById("cliinput").value = "";
-    document.getElementById("clioutput").value = "";
+    clearst()
 });
 
 

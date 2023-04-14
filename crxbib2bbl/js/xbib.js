@@ -547,7 +547,7 @@ class iname extends itex {
         let t = this.__name_index(index);
         if (t == "") { return "" }
         if (t.match(/[\u4e00-\u9fa5]/)) {
-            t = t.slice(0,3);
+            t = t.slice(0, 3);
         }
         t = cnchar.spell(t)
         //使用正则表达式, 将t中的所有中文替换为X
@@ -2256,13 +2256,20 @@ class read_bib {
         let [biblist_zh, biblist_en] = this.__sort();
 
         let zhbbl = [];
+        let totalt = 0;
         for (let i = 0; i < biblist_zh.length; i++) {
-            zhbbl.push(biblist_zh[i].output_bbl);
+            totalt += 1;
+            let t = `%zh:${i + 1}/${biblist_zh.length}\n`
+            t += biblist_zh[i].output_bbl;
+            zhbbl.push(t);
         }
 
         let enbbl = [];
         for (let i = 0; i < biblist_en.length; i++) {
-            enbbl.push(biblist_en[i].output_bbl);
+            totalt += 1;
+            let t = `%en:${i + 1}/${biblist_en.length}\n`
+            t += biblist_en[i].output_bbl;
+            enbbl.push(t);
         }
 
         let a = `\\bibitem[zh, 2019]{zh2019}{\\fontsize{16pt}{\\baselineskip}\\selectfont{中文部分：}}`
@@ -2291,35 +2298,51 @@ class read_bib {
         allbll = allbll.join('\n\n')
         let bbl = `\\begin{thebibliography} {} \n`
         bbl += allbll
+        bbl += `\n\n%total ref num:${totalt}. (zh:${biblist_zh.length}, en:${biblist_en.length}) `
         bbl += `\n\n\\end{thebibliography} `;
         return bbl
     }
 
     __bib() {
         let bibtxt = this.bibtxt
-
         this.bib_dict = this._formatbib(bibtxt);
-
         let [biblist_zh, biblist_en] = this.__sort();
 
         let zhbbl = [];
+        let totalt = 0;
         if (biblist_zh != '') {
             for (let i = 0; i < biblist_zh.length; i++) {
-                zhbbl.push(biblist_zh[i].output_bib);
+                totalt += 1;
+                let t = `%num of zh ref: ${i + 1}/${biblist_zh.length}\n`
+                t += biblist_zh[i].output_bib;
+                zhbbl.push(t);
             }
         }
         let enbbl = [];
         if (biblist_en != '') {
             for (let i = 0; i < biblist_en.length; i++) {
-                enbbl.push(biblist_en[i].output_bib);
+                totalt += 1;
+                let t = `%num of en ref: ${i + 1}/${biblist_en.length}\n`
+                t += biblist_en[i].output_bib;
+                enbbl.push(t);
             }
         }
         // zhbbl & enbbl 合并输出字符
         let allbll = [zhbbl.join('\n'), enbbl.join('\n')]
+        console.log(allbll);
+
         //allbbl 去空元素
-        allbll = allbll.filter(line => line.trim() !== '' && !line.trim().startsWith('%'));
-        allbll = allbll.join('\n\n')
-        return allbll
+        allbll = allbll.filter(line => line.trim() !== '');
+        // allbll = allbll.join('\n\n')
+        //遍历 allbll 数组
+        let outbib = '';
+        for (let i = 0; i < allbll.length; i++) {
+            outbib += allbll[i];
+            outbib += '\n\n';
+        }
+        outbib += `%total num of ref: ${totalt}\n`;
+        console.log(outbib);
+        return outbib
     }
 }
 
