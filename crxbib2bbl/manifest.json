@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "version": "1.50.5",
-    "name": "Overleaf s2t/bib2bbl 1.50.5",
-    "description": "除了提供简繁体互转功能之外，它可以将 bib 文献数据处理成符合 澳门科技大学 研究生毕业论文 文献排版格式要求的 bbl 文件。",
+    "version": "1.53.0",
+    "name": "overleaf s2t/bib2bbl",
+    "description": "除了提供简繁体互转功能之外，它可以将 bib 文献数据处理成符合澳门科技大学研究生毕业论文关于文献排版格式要求的 bbl 文件。",
     "icons": {
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",
@@ -23,8 +23,5 @@
                 "css/styles.css"
             ]
         }
-    ],
-    "permissions": [
-        "activeTab"
     ]
 }

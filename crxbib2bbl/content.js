@@ -1,78 +1,5 @@
 
-var modal = document.createElement('div');
-modal.innerHTML = `
-<div id="must">
-	<div class="fade modal-backdrop in">
-    </div>
-	<div id="modalxx" role="dialog" tabindex="-1" class="fade in modal" style="display: block;">
-		<div class="modal-dialog i" >
-			<div class="modal-content" role="document">
-				<div class="modal-header">
-					<button id="mustx" class="close"> × </button>
-					<h3 class="modal-title">MUST bib2bbl ver 1.50.5 &nbsp;&nbsp;<a class="fa fa-github fa-fw" style="font-size: 14px;"></a>
-						<a href="https://github.com/iihciyekub/must-thesis-tools" target="_blank" style="font-size: 14px;">GitHub @Yongjian.Li</a>
-                        <span style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;使用以下开源工具:</span>
-                        <a href="https://github.com/BYVoid/OpenCC" target="_blank" style="font-size: 14px;">OpenCC</a>
-                        <span style="font-size: 14px;">,</span>
-                        <a href="https://github.com/theajack/cnchar" target="_blank" style="font-size: 14px;">CNChar </a>
-					</h3>
-				</div>
-				<div class="modal-header">
-					<div class="container-fluid">
-						<h4 class="modal-title"> - bib 轉 bbl</h4>
-						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp 步驟1: 將 bib 输入到左邊的文本框中; <a id="copyclearbibbbl" style="font-size: 14px;">注意:右击文本框清空文本。</a></p>
-						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp 步驟2: 將右邊的文本框中文本全部複製到 "ref.bbl" 文件中;</p>
-						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp <span style="color:blue">備註: 如果您的 LaTeX 項目根目錄中沒有 "ref.bbl" 文件,請自行創建. </span ></p>
-						<div style="display: flex; justify-content: center;">
-							<textarea id="left-input" spellcheck="false" placeholder="步驟1: 在這裏輸入bib, 右擊可以清空已有文本;"></textarea>
-							<textarea id="right-input" spellcheck="false" placeholder="步驟2: 結果會自動轉繁體, 在這裏將得到符郃澳門科技大學論文文獻排版要求的 bbl"></textarea>
-						</div>
-						<div style="display: flex; justify-content: center;">
-							<textarea id="citekeys" spellcheck="false" placeholder="這裏將得到所有citekeys, 如果妳不需要對 citekey 進行自動重命名處理,請忽畧!!"></textarea>
-						</div>
-						<div class="buthere">
-							<button id="copybib" class="btn btn-primary l">copy bib</button>
-							<button id="copybbl" class="btn btn-primary l">copy bbl</button>
-							<button id="copycitekeys" class="btn btn-primary l">copy citekeys</button>
-							<button id="copyclear" class="btn btn-primary l">clear</button>
-							<button id="recitekeys" class="btn btn-primary l">rename citekey</button>
-						</div>
-					</div>
-				</div>
-				<div class="modal-header">
-					<h4 class="modal-title"> - 簡 轉 繁</h4>
-						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp (任何情況下) 左邊文本框显示简体, 右邊显示繁體。<a id="copyclearst" style="font-size: 14px;">注意:右击文本框清空文本。</a></p>
-
-					<div class="container-fluid">
-						<div style="display: flex; justify-content: center;">
-							<textarea id="cliinput" spellcheck="false" placeholder="这里将得到简体中文; 鼠标右擊可以清空已有文本;"></textarea>
-							<textarea id="clioutput" spellcheck="false" placeholder="这里将得到繁體中文; 鼠标右擊可以清空已有文本;"></textarea>
-						</div>
-						<div class="buthere" style="width: 10%;">
-							<button id="copyt" class="btn btn-primary l">copy 繁體</button>
-							<button id="copys" class="btn btn-primary l">copy 简体</button>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer-share modal-footer" style="height:60px">
-					<div class="modal-footer-left">
-						<p id='outputinfo' style="color:red"></p>
-					</div>
-					<div class="modal-footer-right">
-						<button id="mustx2" type="button" class="btn-secondary btn" style="height:35px">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-`
-document.body.appendChild(modal);
-
-
-
-
-
+// [opencc.full.js](https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/full.js) 
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
         typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -462,13 +389,126 @@ document.body.appendChild(modal);
 
 }));
 
+
+
+
+//尝试运行 捕捉异常
+try {
+    var name = chrome.runtime.getManifest().name;
+    var version = chrome.runtime.getManifest().version;
+}
+catch (e) {
+    var name = "MUST overleaf s2t/bib2bbl";
+    var version = "1.53.0";
+}
+
+
+var modal = document.createElement('div');
+modal.innerHTML = `
+<div id="must">
+	<div class="fade modal-backdrop in">
+    </div>
+	<div id="modalxx" role="dialog" tabindex="-1" class="fade in modal" style="display: block;">
+		<div class="modal-dialog i" id ="ftop" >
+			<div class="modal-content" role="document">
+				<div class="modal-header">
+					<button id="mustx" class="close"> × </button>
+					<h3 class="modal-title">MUST ${name} ${version} &nbsp;&nbsp;<a class="fa fa-github fa-fw" style="font-size: 14px;"></a>
+						<a href="https://github.com/iihciyekub/must-thesis-tools" target="_blank" style="font-size: 14px;">GitHub @Yongjian.Li</a>
+                        <span style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;使用以下開源工具:</span>
+                        <a href="https://github.com/BYVoid/OpenCC" target="_blank" style="font-size: 14px;">OpenCC</a>
+                        <span style="font-size: 14px;">,</span>
+                        <a href="https://github.com/theajack/cnchar" target="_blank" style="font-size: 14px;">CNChar </a>
+					</h3>
+				</div>
+				<div class="modal-header">
+					<div class="container-fluid">
+						<h4 class="modal-title"> - bib 轉 bbl</h4>
+						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp 步驟1: 將 bib 輸入到左邊的文本框中; <a id="copyclearbibbbl" style="font-size: 14px;">注意:右擊文本框清空文本。</a></p>
+						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp 步驟2: 將右邊的文本框中文本全部複製到 "ref.bbl" 文件中;</p>
+						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp <span style="color:blue">備註: 如果您的 LaTeX 項目根目錄中沒有 "ref.bbl" 文件,請自行創建. </span ></p>
+						<div style="display: flex; justify-content: center;">
+							<textarea id="left-input" spellcheck="false" placeholder="步驟1: 在這裏輸入bib, 右擊可以清空已有文本;"></textarea>
+							<textarea id="right-input" spellcheck="false" placeholder="步驟2: 結果會自動轉繁體, 在這裏將得到符合澳門科技大學論文文獻排版要求的 bbl"></textarea>
+						</div>
+						<div style="display: flex; justify-content: center;">
+							<textarea id="citekeys" spellcheck="false" placeholder="這裏將得到所有 citekeys, 如果您不需要對 citekey 進行重命名處理,請忽略!!"></textarea>
+						</div>
+						<div class="buthere">
+							<button id="copybib" class="btn btn-primary l">copy bib</button>
+							<button id="copybbl" class="btn btn-primary l">copy bbl</button>
+							<button id="copycitekeys" class="btn btn-primary l">copy citekeys</button>
+							<button id="copyclear" class="btn btn-primary l">clear</button>
+							<button id="recitekeys" class="btn btn-primary l">rename citekey</button>
+						</div>
+					</div>
+				</div>
+				<div class="modal-header">
+					<h4 class="modal-title"> - 簡 轉 繁</h4>
+						<p class="modal-title" style="font-size:10pt">&nbsp&nbsp&nbsp&nbsp (任何情況下) 左邊文本框顯示簡體, 右邊顯示繁體。<a id="copyclearst" style="font-size: 14px;">注意:右擊文本框清空文本。</a></p>
+
+					<div class="container-fluid">
+						<div style="display: flex; justify-content: center;">
+							<textarea id="cliinput" spellcheck="false" placeholder="這裏將得到簡體中文; 鼠標右擊可以清空已有文本;"></textarea>
+							<textarea id="clioutput" spellcheck="false" placeholder="這裏將得到繁體中文; 鼠標右擊可以清空已有文本;"></textarea>
+						</div>
+						<div class="buthere" style="width: 10%;">
+							<button id="copyt" class="btn btn-primary l">copy 繁體</button>
+							<button id="copys" class="btn btn-primary l">copy 簡體</button>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer-share modal-footer" style="height:60px">
+					<div class="modal-footer-left">
+						<p id='outputinfo' style="color:red"></p>
+					</div>
+					<div class="modal-footer-right">
+						<button id="mustx2" type="button" class="btn-secondary btn" style="height:35px">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+`
+document.body.appendChild(modal);
+
+
+
+
 const hk2cn = OpenCC.Converter({ from: 'hk', to: 'cn' });
 const cn2hk = OpenCC.Converter({ from: 'cn', to: 'hk' });
+
+// 註冊鼠標點擊事件,當鼠標在目標框之外時隱藏 工具窗口
+function clickHandler(event) {
+    // 要匹配的元素選擇器列表
+    var selectors = ['div#modalxx.fade.in.modal', 'div#must', 'div'];
+    // 獲取當前鼠標所在的元素
+    var currentElement = document.elementFromPoint(event.clientX, event.clientY);
+    // 判斷當前元素是否等於給定的元素選擇器列表
+    if (selectors.some(function (selector) {
+        return currentElement.matches(selector);
+    })) {
+        if (clickHandlerRegistered) {
+            div.style.display = 'none';
+            document.removeEventListener('click', clickHandler);
+            clickHandlerRegistered = false;
+        } else {
+            clickHandlerRegistered = true;
+
+        }
+    }
+}
+//test end
 
 const toolbarLeftNode = document.querySelector('.toolbar-right');
 var firstToolbarItem = document.querySelector(".toolbar-item");
 // 如果找到了該元素，則複製插入到當前頁靣
+
+var clickHandlerRegistered = false;
 if (firstToolbarItem) {
+
+    // 註冊 click 事件處理程序
     //  複製 firstToolbarItem 節點
     var clone1 = firstToolbarItem.cloneNode(true);
     // 獲取 cloneElement 節點下 button i
@@ -487,29 +527,37 @@ if (firstToolbarItem) {
     var button = clone1.querySelector('button');
 
     button.onclick = function () {
-        // 讀取剪貼闆的內容
+        // 讀取剪貼板的內容
         navigator.clipboard.readText().then(text => {
 
             var newText = cn2hk(text);
-            // 將內容寫入剪貼闆
+            // 將內容寫入剪貼板
             navigator.clipboard.writeText(newText).then(function () {
-                alert('此操作會對剪貼闆中的文本進行繁體轉換,並重新寫入剪貼闆!');
+                alert('此操作會對剪貼板中的文本進行繁體轉換,並重新寫入剪貼板!');
             }, function (err) {
                 console.error('Async: Could not copy text: ', err);
             });
         });
     };
 
-
     // 顯示 bib2bbl 窗口
     var button2 = clone2.querySelector('button');
     var div = document.getElementById('must');
+
     button2.addEventListener('click', function () {
+        // 鼠標點擊註冊事件, 點擊其他地方隱藏
         div.style.display = 'block';
         document.getElementById("outputinfo").textContent = "";
+        //註冊鼠標點擊事件,當鼠標在目標框之外時隱藏 工具窗口
+        document.addEventListener('click', clickHandler);
     });
 
 }
+
+
+var zhnum = 0
+var endum = 0
+
 
 function processText(rename = 0) {
     // 獲取左側文本輸入框的文本
@@ -518,7 +566,7 @@ function processText(rename = 0) {
     var t = /@.*?/gm;
 
     if (!t.test(text)) {
-        document.getElementById("outputinfo").textContent = "無傚或不完的 bib 信息,請重新輸入!";
+        document.getElementById("outputinfo").textContent = "無效或不完的 bib 信息,請重新輸入!";
         document.getElementById("left-input").value = ''
         document.getElementById("right-input").value = ''
         return;
@@ -538,17 +586,17 @@ function processText(rename = 0) {
     let citekeys = a.citekeys;
     document.getElementById("citekeys").value = citekeys;
 
-    let zhnum = a.numofzhbib;
-    let endum = a.numofenbib;
-    let info = `成功!  中文文獻數量:${zhnum}; 英文文獻數量:${endum}`
-    document.getElementById("outputinfo").textContent = info;
+    zhnum = a.numofzhbib;
+    endum = a.numofenbib;
+
 }
 
 function copyfbib() {
     let t = document.getElementById("left-input").value;
     if (t != "") {
         navigator.clipboard.writeText(t).then(function () {
-            alert('bib 結果已復製到剪貼闆!')
+            let info = `bib 已格式！bbl 結果已寫入剪貼板。中文文獻數量:${zhnum}; 英文文獻數量:${endum}`
+            document.getElementById("outputinfo").textContent = info;
         }, function (err) {
             console.error('Async: Could not copy text: ', err);
         });
@@ -559,7 +607,8 @@ function copyfbbl() {
     let t = document.getElementById("right-input").value;
     if (t != "") {
         navigator.clipboard.writeText(t).then(function () {
-            alert('bbl 結果已復製到剪貼闆!')
+            let info = `bib 已格式！bbl 結果已寫入剪貼板。中文文獻數量:${zhnum}; 英文文獻數量:${endum}`
+            document.getElementById("outputinfo").textContent = info;
         }, function (err) {
             console.error('Async: Could not copy text: ', err);
         });
@@ -570,7 +619,7 @@ function copyfcitekeys() {
     let t = document.getElementById("citekeys").value;
     if (t != "") {
         navigator.clipboard.writeText(t).then(function () {
-            alert('citekeys 結果已復製到剪貼闆!')
+            document.getElementById("outputinfo").textContent = `citekeys 結果已復製到剪貼板! 中文文獻數量:${zhnum}; 英文文獻數量:${endum}`
         }, function (err) {
             console.error('Async: Could not copy text: ', err);
         });
@@ -588,9 +637,15 @@ function clearst() {
     document.getElementById("clioutput").value = "";
 }
 
+
+
+
+
+
 var leftinput = document.getElementById("left-input")
 leftinput.addEventListener('input', function () {
     processText(0);
+    copyfbbl()
 });
 leftinput.addEventListener('contextmenu', (event) => {
     event.preventDefault(); //阻止默認事件
@@ -652,7 +707,7 @@ copyt.addEventListener('click', function () {
     let t = document.getElementById("clioutput").value;
     if (t != "") {
         navigator.clipboard.writeText(t).then(function () {
-            alert('繁體已復製到剪貼闆!')
+            document.getElementById("outputinfo").textContent = '繁體已復製到剪貼板!'
         }, function (err) {
             console.error('Async: Could not copy text: ', err);
         });
@@ -665,7 +720,7 @@ copys.addEventListener('click', function () {
     let t = document.getElementById("cliinput").value;
     if (t != "") {
         navigator.clipboard.writeText(t).then(function () {
-            alert('簡體已復製到剪貼闆!')
+            document.getElementById("outputinfo").textContent = '簡體已復製到剪貼板!'
         }, function (err) {
             console.error('Async: Could not copy text: ', err);
         });
@@ -705,7 +760,6 @@ var mustx = document.getElementById('mustx');
 if (mustx) {
     mustx.addEventListener('click', function () {
         div.style.display = 'none';
-
     });
 }
 

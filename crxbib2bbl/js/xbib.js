@@ -1,71 +1,73 @@
+// ver 0.23.04.22
 
 const BIB = {
     'article': {
         'N': ['author', 'year', 'title', 'journal'],
-        'UN': ['volume', 'number', 'pages', 'month', 'doi', 'note'],
+        'UN': ['volume', 'number', 'pages', 'month', 'doi', 'note', "url"],
         'UQ': []
     },
     'conference': {
         'N': ['author', 'year', 'title', 'booktitle'],
-        'UN': ['editor', 'volume', 'number', 'series', 'pages', 'address', 'month', 'organization', 'publisher', 'note'],
+        'UN': ['editor', 'edition', 'volume', 'number', 'series', 'pages', 'address', 'month', 'organization', 'publisher', 'note', "url"],
         'UQ': ['volume/number']
     },
     'inproceedings': {
         'N': ['author', 'year', 'title', 'booktitle'],
-        'UN': ['editor', 'volume', 'number', 'series', 'pages', 'address', 'month', 'organization', 'publisher', 'note'],
+        'UN': ['editor', 'edition', 'volume', 'number', 'series', 'pages', 'address', 'month', 'organization', 'publisher', 'note', "url"],
         'UQ': ['volume/number']
     },
     'proceedings': {
         'N': ['title', 'year', 'editor'],
-        'UN': ['volume', 'number', 'series', 'address', 'month', 'organization', 'publisher', 'note'],
+        'UN': ['volume', 'edition', 'number', 'series', 'address', 'month', 'organization', 'publisher', 'note', "url"],
         'UQ': ['volume/number']
     },
     'book': {
         'N': ['author', 'title', 'publisher', 'year'],
-        'UN': ['volume', 'number', 'series', 'address', 'edition', 'month', 'note'],
+        'UN': ['volume', 'number', 'series', 'address', 'edition', 'month', 'note', "url"],
         'UQ': ['volume/number']
     },
     'booklet': {
         'N': ['title'],
-        'UN': ['author', 'howpublished', 'address', 'month', 'year', 'note'],
+        'UN': ['author', 'howpublished', 'address', 'month', 'year', 'note', "url"],
         'UQ': []
     },
     'inbook': {
-        'N': ['author', 'title', 'chapter', 'pages', 'publisher', 'year'], 'UN': ['volume', 'number', 'series', 'type', 'address', 'edition', 'month', 'note'],
+        'N': ['author', 'title', 'chapter', 'pages', 'publisher', 'year'],
+        'UN': ['volume', 'number', 'series', 'type', 'address', 'edition', 'month', 'note', "url"],
         'UQ': ['volume/number', 'chapter/pages']
     },
     'incollection': {
         'N': ['author', 'title', 'booktitle', 'publisher', 'year'],
-        'UN': ['editor', 'volume', 'number', 'series', 'type', 'chapter', 'pages', 'address', 'edition', 'month', 'note'],
+        'UN': ['editor', 'volume', 'number', 'series', 'type', 'chapter', 'pages', 'address', 'edition', 'month', 'note', "url"],
         'UQ': ['volume/number']
     },
     'mastersthesis': {
-        'N': ['author', 'title', 'school', 'year'],
-        'UN': ['type', 'address', 'month', 'note'],
+        'N': ['author', 'title', 'year', 'school'],
+        'UN': ['edition', 'address', 'month', 'keywords', 'note', "url"],
         'UQ': []
     },
     'phdthesis': {
         'N': ['author', 'title', 'year', 'school'],
-        'UN': ['address', 'month', 'keywords', 'note'],
+        'UN': ['edition', 'address', 'month', 'keywords', 'note', "url"],
         'UQ': []
     },
     'manual': {
-        'N': ['title'], 'UN': ['author', 'organization', 'address', 'edition', 'month', 'year', 'note'],
+        'N': ['title'], 'UN': ['author', 'organization', 'address', 'edition', 'month', 'year', 'note', "url"],
         'UQ': []
     },
     'techreport': {
         'N': ['author', 'title', 'institution', 'year'],
-        'UN': ['type', 'number', 'address', 'month', 'note'],
+        'UN': ['type', 'number', 'address', 'month', 'note', "url"],
         'UQ': []
     },
     'unpublished': {
         'N': ['author', 'title', 'note'],
-        'UN': ['month', 'year'],
+        'UN': ['month', 'year', "url"],
         'UQ': []
     },
     'misc': {
         'N': [],
-        'UN': ['author', 'title', 'howpublished', 'month', 'year', 'note'],
+        'UN': ['author', 'title', 'howpublished', 'month', 'year', 'note', "url"],
         'UQ': []
     }
 }
@@ -176,10 +178,14 @@ class itex {
         let k = _listT.indexOf(T)
         if (k > -1) {
             let i = _listT[k];
-            i = i.toLowerCase();
+            // i = i.toLowerCase();
             //将i 按照空格进行分割,如果元素不在 commonwords 数组中,则不进行首字母大写替换
             i = i.replace(/\b(\w+)\b/g, function (m, p1) {
-                if (commonWords.indexOf(p1) > -1) {
+                //判断 如果 i 全部都为大写时,则不进行首字母大写替换
+                if (p1.toUpperCase() == p1) {
+                    return p1;
+                }
+                if (commonWords.indexOf(p1.toLowerCase()) > -1) {
                     return p1;
                 } else {
                     return p1.replace(/(^\s*)(\w)/, function (m, p1, p2) {
@@ -205,14 +211,25 @@ class itex {
         let k = _listT.indexOf(T)
         if (k > -1) {
             let i = _listT[k];
-            i = i.toLowerCase();
-            // 将i 的第一个单词的首字母进行大写替换 
-            i = i.replace(/(^\s*)(\w)/, function (m, p1, p2) {
-                return p1 + p2.toUpperCase();
-            });
+
+            //将i 按照空格进行分割,仅仅第一个元素首字母大写, 第二个元素之后,如果元素全为大写并不处理,否则将元素转为字母小写
+            // 将句子按空格分割为数组
+            let words = i.split(" ");
+
+            // 将第一个单词的首字母大写，其余单词转为小写
+            let result = words[0].charAt(0).toUpperCase() + words[0].slice(1).toLowerCase();
+            for (let j = 1; j < words.length; j++) {
+                if (words[j] === words[j].toUpperCase()) {
+                    // 如果单词全为大写，则不进行处理
+                    result += " " + words[j];
+                } else {
+                    // 将单词转为小写
+                    result += " " + words[j].toLowerCase();
+                }
+            }
             // update value
-            this.T = i;
-            this._listT[k] = i;
+            this.T = result;
+            this._listT[k] = result;
         }
         return this;
     }
@@ -229,6 +246,12 @@ class itex {
      * 粗体
      */
     get bold() {
+        let value = this.T;
+
+        value = value.replace(/([a-zA-Z]+)/g, function (match, p1, offset, string) {
+            return `{\\em ${p1}}`;
+        });
+        this.T = value;
         this._listT = this._insert(["{", "\\bfseries"], ["}"]);
         return this;
     }
@@ -266,11 +289,17 @@ class itex {
 
     get url() {
         let t = this.T;
+        // 对 t 两边去空格
+        t = t.trim();
+
         // 使用 正则表达式 在t 中匹配https开头,连续的字符串,空格或换行 结束的字符串 
         if (t.indexOf('\\url') > -1) {
             return this;
         }
         let url = t.split(" ")
+        url = url.filter((v) => {
+            return v != "";
+        })
         //如果url 元素包含http或https,则将其替换为 \url{网址}
         url = url.map((v) => {
             if (v.indexOf('http://') > -1 || v.indexOf('https://') > -1) {
@@ -292,7 +321,7 @@ class idate extends itex {
         super(text);
         this.month_dict = {
             "1": 'January',
-            "1": 'February',
+            "2": 'February',
             "3": 'March',
             "4": 'April',
             "5": 'May',
@@ -433,19 +462,30 @@ class idate extends itex {
             this.date;
         }
         if (this._year != "") {
-            var y = this._year + "年"
+            var y = this._year
         };
         if (this._month != "") {
+            y += "年"
             var m = this._month + "月"
         };
         if (this._endday != "") {
             var d = this._day
             var ed = this._endday + "日"
-            d = d + "~" + ed
+            d = d + "至" + ed
         } else if (this._day != "") {
             var d = this._day + "日"
         };
         this.T = [y, m, d].join("");
+
+        // let y = this._year;
+        // let m = this.month.str;
+        // let d = this._day;
+        // let ed = this._endday;
+        // // console.log(y, m, d, ed);
+        // let t1 = [y, m].filter((i) => i != "").join("年");
+        // let t2 = [d, ed].filter((i) => i != "").join("至");
+        // let t = [t1, t2].filter((i) => i != "").join("");
+        // this.T = t;
         return this;
     }
 
@@ -479,7 +519,7 @@ class idate extends itex {
 
         let t1 = [y, m].filter((i) => i != "").join(", ");
         let t2 = [d, ed].filter((i) => i != "").join("-");
-        let t = [t1, t2].filter((i) => i != "").join(". ");
+        let t = [t1, t2].filter((i) => i != "").join(" ");
 
         this.T = t;
 
@@ -558,6 +598,11 @@ class iname extends itex {
 
     stroke(index = 0) {
         let t = this.__name_index(index);
+        // 用正则表达式 匹配变量t 最前面的三个汉字
+        t = t.match(/[\u4e00-\u9fa5]{1,3}/);
+        if (t == null) { return "" }
+        t = t[0];
+
         if (t == "") { return "99999999" }
 
         let lan = this.language;
@@ -578,6 +623,7 @@ class iname extends itex {
             });
             t = t.join("").slice(0, 8).padEnd(8, '0');
         }
+        // console.log(t)
         return t
     }
 
@@ -586,12 +632,18 @@ class iname extends itex {
         // let name = this.name;
         let fidld1 = `_name_list`
         let fidld2 = `_name_num`
-        if (t_list.indexOf("\\&") > -1) {
-            t_list = t_list.split('\\&').map(x => x.trim()).filter(x => x !== '');
-        } else if (t_list.indexOf("\&") > -1) {
-            t_list = t_list.split('\&').map(x => x.trim()).filter(x => x !== '');
+
+
+        if (t_list[0] == '{' && t_list[t_list.length - 1] == '}') {
+            t_list = [t_list]
         } else {
-            t_list = t_list.split('and').map(x => x.trim()).filter(x => x !== '');
+            if (t_list.indexOf("\\&") > -1) {
+                t_list = t_list.split('\\&').map(x => x.trim()).filter(x => x !== '');
+            } else if (t_list.indexOf("\&") > -1) {
+                t_list = t_list.split('\&').map(x => x.trim()).filter(x => x !== '');
+            } else {
+                t_list = t_list.split('and').map(x => x.trim()).filter(x => x !== '');
+            }
         }
         this[fidld1] = t_list;
         this[fidld2] = t_list.length;
@@ -604,29 +656,35 @@ class iname extends itex {
         let t_list = this[`_name_list`]
         let t_dic = {};
         t_list.forEach((n, index) => {
-            // 如果,符号   在作者名字中
-            if (n.includes(",")) {
-                //,符号分割 ,去空格去除空元素
-                n = n.split(",").map(s => s.trim()).filter(s => s);
-                // 将第一个元素保存到 namedict[index]['first'] 中
-                t_dic[index] = { 'first': [n[0]] };
-                // 删除第一个元素
-                n.shift();
-                // 将剩余元素保存到 namedict[index]['others'] 中
-                t_dic[index]['others'] = n;
 
+            if (n[0] == '{' && n[n.length - 1] == '}') {
+                t_dic[index] = { 'first': [n.slice(1, -1)] };
+                t_dic[index]['others'] = []
             } else {
-                n = n.trim().replace(" ", '');
-                if (n.length >= 4) {
-                    //将前两个字符保存到 namedict[index]['first'] 中
-                    t_dic[index] = { 'first': [n.slice(0, 2)] };
-                    //将剩余字符保存到 namedict[index]['others'] 中
-                    t_dic[index]['others'] = [n.slice(2)];
+                // 如果,符号   在作者名字中
+                if (n.includes(",")) {
+                    //,符号分割 ,去空格去除空元素
+                    n = n.split(",").map(s => s.trim()).filter(s => s);
+                    // 将第一个元素保存到 namedict[index]['first'] 中
+                    t_dic[index] = { 'first': [n[0]] };
+                    // 删除第一个元素
+                    n.shift();
+                    // 将剩余元素保存到 namedict[index]['others'] 中
+                    t_dic[index]['others'] = n;
+
                 } else {
-                    //将字符保存到 namedict[index]['first'] 中
-                    t_dic[index] = { 'first': [n.slice(0, 1)] };
-                    //将剩余字符保存到 namedict[index]['others'] 中
-                    t_dic[index]['others'] = [n.slice(1)];
+                    n = n.trim().replace(" ", '');
+                    if (n.length >= 4) {
+                        //将前两个字符保存到 namedict[index]['first'] 中
+                        t_dic[index] = { 'first': [n.slice(0, 2)] };
+                        //将剩余字符保存到 namedict[index]['others'] 中
+                        t_dic[index]['others'] = [n.slice(2)];
+                    } else {
+                        //将字符保存到 namedict[index]['first'] 中
+                        t_dic[index] = { 'first': [n.slice(0, 1)] };
+                        //将剩余字符保存到 namedict[index]['others'] 中
+                        t_dic[index]['others'] = [n.slice(1)];
+                    }
                 }
             }
         });
@@ -640,29 +698,35 @@ class iname extends itex {
         let t_list = this[`_name_list`]
         let t_dic = {};
         t_list.forEach((n, index) => {
-            // 如果,符号   在作者名字中
-            if (n.includes(",")) {
-                // ,分割 author去空格,去除空元素
-                n = n.split(",").map(s => s.trim()).filter(s => s !== "");
-                // 将第一个元素保存到 namedict[index]['first'] 中
-                t_dic[index] = { 'first': [n[0].toLowerCase()] };
-                // 删除第一个元素
-                n.shift();
+            // console.log(n, n.slice(1, -1))
+            if (n[0] == '{' && n[n.length - 1] == '}') {
+                t_dic[index] = { 'first': [n.slice(1, -1)] };
+                t_dic[index]['others'] = []
             } else {
-                // 被空格分割
-                n = n.split(" ").map(s => s.trim()).filter(s => s !== "");
-                // 将最一个元素保存到 namedict[index]['first'] 中
-                t_dic[index] = { 'first': [n[n.length - 1]] };
-                // 删除最后一个元素
-                n.pop();
-            }
-            n = n.join(" ");
-            n = n.split(" ").map(s => s.trim()).filter(s => s).map(s => s.replace(".", ""));
-            t_dic[index]['others'] = n;
+                if (n.includes(",")) {
+                    // ,分割 author去空格,去除空元素
+                    n = n.split(",").map(s => s.trim()).filter(s => s !== "");
+                    // 将第一个元素保存到 namedict[index]['first'] 中
+                    t_dic[index] = { 'first': [n[0].toLowerCase()] };
+                    // 删除第一个元素
+                    n.shift();
+                } else {
+                    // 被空格分割
+                    n = n.split(" ").map(s => s.trim()).filter(s => s !== "");
+                    // 将最一个元素保存到 namedict[index]['first'] 中
+                    t_dic[index] = { 'first': [n[n.length - 1]] };
+                    // 删除最后一个元素
+                    n.pop();
+                }
+                n = n.join(" ");
+                n = n.split(" ").map(s => s.trim()).filter(s => s).map(s => s.replace(".", ""));
 
+                t_dic[index]['others'] = n;
+            }
         });
         // 更新 t_dic,按key 排序
         t_dic = Object.fromEntries(Object.entries(t_dic).sort());
+
         return t_dic;
     }
 
@@ -684,6 +748,7 @@ class iname extends itex {
 
     _join_en_name(t_dic, k) {
         let [a, b] = ['', ''];
+        // console.log(t_dic[k])
         a = t_dic[k]['first'].map(s => s.charAt(0).toUpperCase() + s.slice(1))
         a = a.filter(s => s !== "").join(" ");
 
@@ -956,6 +1021,7 @@ class anybib {
 
         let t = this.f_txt;
         t = t.match(/@(\w*\s*){/)[1];
+        // t = t.trim();
         t = t.toLowerCase().trim();
         this[apaField] = t;
         return this[apaField];
@@ -971,7 +1037,10 @@ class anybib {
         let t = this.f_txt;
         try {
             t = t.match(/@.*?{(.*?),/)[1];
-            t = t.toLowerCase().trim();
+            t = t.trim();
+            //去除 变量t 的所有空格
+            t = t.replace(/\s+/g, '');
+            // t = t.toLowerCase().trim();
         } catch (error) {
             t = '';
         }
@@ -981,6 +1050,8 @@ class anybib {
 
     set citekey(v) {
         let [apaField, _] = this.get_field('citekey', '', '');
+
+        v = v.replace(/\s+/g, '');
         this[apaField] = v;
     }
 
@@ -1121,7 +1192,7 @@ class anybib {
             // 如果this.entryType 出现在 lista ['book] 中
             if (!typelist.includes(entryType)) {
                 value = value.clear.bold.macro
-
+                // 使用正则表达式, 提取出连续的英文字符,并将其转换为大写
             } else {
                 value = value.clear.str;
             }
@@ -1144,7 +1215,7 @@ class anybib {
 
         let language = this.language;
         let entryType = this.entryType;
-        let typelist = ['article', 'incollection', 'conference'];
+        let typelist = ['article','incollection'];
         let value = new itex(booktitle);
         if (language == 'zh') {
             // 如果this.entryType 出现在 lista ['book] 中
@@ -1172,7 +1243,7 @@ class anybib {
 
         let language = this.language;
         let entryType = this.entryType;
-        let typelist = ['book', 'inbook'];
+        let typelist = ['book', 'inbook', 'incollection', 'conference'];
         let value = new itex(series);
         if (language == 'zh') {
             // 如果this.entryType 出现在 lista ['book] 中
@@ -1233,20 +1304,37 @@ class anybib {
         let [apaField, orgField] = this.get_field('year');
         let year = this[orgField];
         this[apaField] = this[orgField];
+        let [mapaField, morgField] = this.get_field('month');
+
+        if (this[morgField] != '') {
+            year += ` - ${this[morgField]}`;
+        }
+        // 如果year 不为"" 
         if (this[orgField] != '') {
             //如果没有在year中匹配到4个数字
-            if (year.match(/\d{4}/) && year.length == 4) {
-                year = new idate(year);
-                year = year.year.str;
-                this[orgField] = year;
+            if (year.match(/\d{4}/)) {
+                let date_obj = new idate(year);
+                let y = date_obj.year.str;
+                let m = date_obj.month_full.str;
+                let d = date_obj.day.str;
+                let ed = date_obj.endday.str;
+
+                this[orgField] = y;
+                if (this[morgField] != '') {
+                    // [m,d,ed] 排除元素=='' 的join
+                    let ded = [d, ed].filter(x => x != '').join('-');
+                    ded = [m, ded].filter(x => x != '').join(', ')
+                    this[morgField] = ded;
+                }
+                this[apaField] = date_obj.date.str
                 return this[orgField];
             }
         };
 
         let language = this.language;
         let value = ''
-        year = new idate(year);
-        value = year.year.str;
+        let date_obj = new idate(year);
+        value = date_obj.year.str;
         if (value == '') {
             if (language == 'zh') {
                 value = `出版中`
@@ -1289,7 +1377,7 @@ class anybib {
                     value = value.date_zh.cirBrackets.str;
                     break;
                 default:
-                    value = value.year.cirBrackets.str;
+                    value = value.date_zh.cirBrackets.str;
                     break;
             }
         } else if (language == 'en') {
@@ -1301,15 +1389,13 @@ class anybib {
                     value = value.date_en_full.cirBrackets.str;
                     break;
                 default:
-                    value = value.year.cirBrackets.str;
+                    value = value.date_en_full.cirBrackets.str;
                     break;
             }
         }
         this[apaField] = value;
         return this[apaField]
     }
-
-
 
     __apa_year_addsuffix(v) {
         let [apaField, _] = this.get_field('apayear', "", "");
@@ -1445,7 +1531,7 @@ class anybib {
 
             // if (pages.match(/\d+/g) == null) {
             value.language = language;
-            value = value.squBrackets.str;
+            value = value.str;
         } else {
             if (language == 'zh') {
                 // 如果this.entryType 出现在 lista ['book] 中
@@ -1494,13 +1580,13 @@ class anybib {
         if (language == 'zh') {
             switch (entryType) {
                 default:
-                    publisher = publisher.clear.bold.str;
+                    publisher = publisher.clear.str;
                     break;
             }
         } else if (language == 'en') {
             switch (entryType) {
                 default:
-                    publisher = publisher.clear.Title.italic.str;
+                    publisher = publisher.clear.Title.str;
                     break;
             }
         }
@@ -1555,6 +1641,21 @@ class anybib {
                 case 'misc':
                     value = value.str;
                     break;
+                case 'conference':
+                    value = value.squBrackets.str;
+                    break;
+                case 'inproceedings':
+                    value = value.squBrackets.str;
+                    break;
+                case 'proceedings':
+                    value = value.squBrackets.str;
+                    break;
+                case 'phdthesis':
+                    value = value.squBrackets.str;
+                    break;
+                case 'mastersthesis':
+                    value = value.squBrackets.str;
+                    break;
                 default:
                     value = value.cirBrackets.str
                     break;
@@ -1563,6 +1664,21 @@ class anybib {
             switch (entryType) {
                 case 'misc':
                     value = value.str;
+                    break;
+                case 'conference':
+                    value = value.squBrackets.str;
+                    break;
+                case 'inproceedings':
+                    value = value.squBrackets.str;
+                    break;
+                case 'proceedings':
+                    value = value.squBrackets.str;
+                    break;
+                case 'phdthesis':
+                    value = value.squBrackets.str;
+                    break;
+                case 'mastersthesis':
+                    value = value.squBrackets.str;
                     break;
                 default:
                     value = value.cirBrackets.str
@@ -1620,7 +1736,7 @@ class anybib {
         if (note == '') { return '' };
         if (this[apaField] != '') { return this[apaField] };
         note = new itex(note);
-        note = note.url.str;
+        note = note.str;
         this[apaField] = note;
         return this[apaField];
     }
@@ -1660,13 +1776,13 @@ class anybib {
         if (language == 'zh') {
             switch (entryType) {
                 default:
-                    value = value.squBrackets.str
+                    value = value.cirBrackets.str
                     break;
             }
         } else if (language == 'en') {
             switch (entryType) {
                 default:
-                    value = value.squBrackets.str
+                    value = value.cirBrackets.str
                     break;
             }
         }
@@ -1680,7 +1796,11 @@ class anybib {
         if (url == '') { return '' };
         if (this[apaField] != '') { return this[apaField] };
 
-        this[apaField] = `\\url{${url}}`;
+        url = new itex(url);
+        url = url.url.str;
+        this[orgField] = url;
+        let addf = `\\enfz `;
+        this[apaField] = `{${addf} ${url}}`;
         return this[apaField];
 
     }
@@ -1748,6 +1868,7 @@ class anybib {
         info += this.f_output([this.apa_authors, this.apa_year], ' ')
         info += this.f_output([this.apa_title]);
         info += this.f_output([this.apa_journal, this.apa_volume + this.apa_number, this.apa_pages], ', ')
+        info += this.f_output([this.apa_url]);
         info += this.f_output([this.apa_note]);
         info += "\n";
         return info;
@@ -1777,8 +1898,9 @@ class anybib {
     get book() {// 出现在正文的引用文本+引用id,作者,年份,标题(出版版本),出版社, 
         let info = `\\bibitem[${this.apa_citetxt}]{${this.citekey}}`;
         info += this.f_output([this.apa_authors, this.apa_year], ' ')
-        info += this.f_output([this.apa_title, this.apa_series], ', ');
+        info += this.f_output([this.apa_title + this.apa_edition, this.apa_series], ', ');
         info += this.f_output([this.apa_address, this.apa_publisher], ': ');
+        info += this.f_output([this.apa_url]);
         info += this.f_output([this.apa_note]);
         info += "\n";
         return info;
@@ -1825,6 +1947,7 @@ class anybib {
         }
 
         info += this.f_output([this.apa_address, this.apa_publisher]);
+        info += this.f_output([this.apa_url]);
         info += this.f_output([this.apa_note]);
         info += "\n";
         return info;
@@ -1860,6 +1983,7 @@ class anybib {
         info += this.f_output([this.apa_title, this.apa_series], ', ');
         info += this.f_output([this.apa_editors, this.apa_booktitle + this.apa_edition + this.apa_pages], ', ');
         info += this.f_output([this.apa_address, this.apa_publisher], ', ');
+        info += this.f_output([this.apa_url]);
         info += this.f_output([this.apa_note]);
         info += "\n";
         return info;
@@ -1874,9 +1998,14 @@ class anybib {
     get conference() {
         let info = `\\bibitem[${this.apa_citetxt}]{${this.citekey}}`;
         info += this.f_output([this.apa_authors, this.apa_year], ' ')
-        info += this.f_output([this.apa_title]);
-        info += this.f_output([this.apa_editors, this.apa_booktitle + this.apa_pages], ', ');
-        info += this.f_output([this.apa_series, this.apa_address, this.apa_publisher,], ', ');
+        if (this.apa_series == '') {
+            info += this.f_output([this.apa_title + this.apa_edition]);
+        } else {
+            info += this.f_output([this.apa_title]);
+            info += this.f_output([this.apa_chair, this.apa_series + this.apa_edition + this.apa_pages], ', ');
+        }
+        info += this.f_output([this.apa_booktitle, this.apa_address, this.apa_publisher,], ', ');
+        info += this.f_output([this.apa_url]);
         info += this.f_output([this.apa_note]);
         info += "\n";
         return info;
@@ -1904,21 +2033,23 @@ class anybib {
     get phdthesis() {
         let info = `\\bibitem[${this.apa_citetxt}]{${this.citekey}}`;
         info += this.f_output([this.apa_authors, this.apa_year], ' ')
-        info += this.f_output([this.apa_title]);
+        info += this.f_output([this.apa_title + this.apa_edition]);
         info += this.f_output([this.apa_address, this.apa_school], ", ");
+        info += this.f_output([this.apa_url]);
         info += this.f_output([this.apa_note]);
         info += "\n";
         return info;
     }
 
     get mastersthesis() {
-        let info = `\\bibitem[${this.apa_citetxt}]{${this.citekey}}`;
-        info += this.f_output([this.apa_authors, this.apa_year], ' ')
-        info += this.f_output([this.apa_title]);
-        info += this.f_output([this.apa_address, this.apa_school], ", ");
-        info += this.f_output([this.apa_note]);
-        info += "\n";
-        return info;
+        // let info = `\\bibitem[${this.apa_citetxt}]{${this.citekey}}`;
+        // info += this.f_output([this.apa_authors, this.apa_year], ' ')
+        // info += this.f_output([this.apa_title + this.apa_edition]);
+        // info += this.f_output([this.apa_address, this.apa_school], ", ");
+        // info += this.f_output([this.apa_url]);
+        // info += this.f_output([this.apa_note]);
+        // info += "\n";
+        return this.phdthesis()
     }
 
     /**
@@ -1940,8 +2071,9 @@ class anybib {
     get techreport() {
         let info = `\\bibitem[${this.apa_citetxt}]{${this.citekey}}`;
         info += this.f_output([this.apa_authors, this.apa_year], ' ')
-        info += this.f_output([this.apa_title + this.apa_type]);
+        info += this.f_output([this.apa_title + this.apa_number + this.apa_type]);
         info += this.f_output([this.apa_institution]);
+        info += this.f_output([this.apa_url]);
         info += this.f_output([this.apa_note]);
         info += "\n";
         return info;
@@ -1957,6 +2089,7 @@ class anybib {
         let info = `\\bibitem[${this.apa_citetxt}]{${this.citekey}}`;
         info += this.f_output([this.apa_authors, this.apa_year], ' ')
         info += this.f_output([this.apa_title]);
+        info += this.f_output([this.apa_url]);
         info += this.f_output([this.apa_note]);
         info += "\n";
         return info;
@@ -1967,6 +2100,7 @@ class anybib {
         info += this.f_output([this.apa_authors, this.apa_year], ' ')
         info += this.f_output([this.apa_title + this.apa_edition]);
         info += this.f_output([this.apa_journal, this.apa_howpublished, this.apa_volume, this.apa_number, this.apa_pages], ',')
+        info += this.f_output([this.apa_url]);
         info += this.f_output([this.apa_note]);
         info += "\n";
         return info;
@@ -2012,8 +2146,8 @@ class anybib {
                 return this.unpublished;
             case 'manual':// manual: 技术手册
                 return this.manual;
-            case 'masterthesis':// masterthesis: 硕士论文
-                return this.masterthesis;
+            case 'mastersthesis':// masterthesis: 硕士论文
+                return this.phdthesis;
             case 'phdthesis':// phdthesis: 博士论文
                 return this.phdthesis;
             case 'conference':// conference: 会议论文
@@ -2272,8 +2406,14 @@ class read_bib {
             enbbl.push(t);
         }
 
-        let a = `\\bibitem[zh, 2019]{zh2019}{\\fontsize{16pt}{\\baselineskip}\\selectfont{中文部分：}}`
-        a += `\n{\\large\\linespread{1.485}\\selectfont \n`
+        var a = ""
+        if (this.numofenbib == 0) {
+            a = ""
+        } else {
+            a = `\\bibitem[zh, 2019]{zh2019}{\\fontsize{16 pt}{\\baselineskip}\\selectfont 中文部分：}`
+        }
+        a += `\n{\\cnfz \n`
+
 
         let b = `}`
         if (zhbbl.length > 0) {
@@ -2283,8 +2423,13 @@ class read_bib {
             zhbbl.push(b);
         }
 
-        a = `\\bibitem[En, 2019]{en2019}{\\fontsize{16pt}{\\baselineskip}\\selectfont{英文部分：}}`
-        a += `\n{\\normalsize\\linespread{1.083333333333}\\selectfont \n`
+        if (this.numofzhbib == 0) {
+            a = ""
+        } else {
+            a = `\\bibitem[En, 2019]{en2019}{\\fontsize{16 pt}{\\baselineskip}\\selectfont 英文部分：}`
+        }
+        a += `\n{\\enfz \n`
+
 
         b = `} `
         if (enbbl.length > 0) {
@@ -2329,7 +2474,7 @@ class read_bib {
         }
         // zhbbl & enbbl 合并输出字符
         let allbll = [zhbbl.join('\n'), enbbl.join('\n')]
-        console.log(allbll);
+        // console.log(allbll);
 
         //allbbl 去空元素
         allbll = allbll.filter(line => line.trim() !== '');
@@ -2341,7 +2486,7 @@ class read_bib {
             outbib += '\n\n';
         }
         outbib += `%total num of ref: ${totalt}\n`;
-        console.log(outbib);
+        // console.log(outbib);
         return outbib
     }
 }
