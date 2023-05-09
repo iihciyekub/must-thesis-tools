@@ -11,6 +11,8 @@
 |      |           | [opencc-js CDN files](https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/) | OpenCC CDN 文件目录                                          |
 
 
+## Overleaf s2t/bib2bbl 1.60.0
+- 修正英文文献排序bug问题;
 
 ## Overleaf s2t/bib2bbl 1.50.5
 
