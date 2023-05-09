@@ -391,15 +391,14 @@
 
 
 
-
 //尝试运行 捕捉异常
 try {
     var name = chrome.runtime.getManifest().name;
     var version = chrome.runtime.getManifest().version;
 }
 catch (e) {
-    var name = "MUST overleaf s2t/bib2bbl";
-    var version = "1.53.0";
+    var name = "overleaf s2t/bib2bbl";
+    var version = "1.60.0";
 }
 
 
@@ -473,7 +472,29 @@ modal.innerHTML = `
 `
 document.body.appendChild(modal);
 
+function tooltip(txt) {
 
+    // 创建提示框元素，显示 1 秒后移除
+    const tooltip = document.createElement('div');
+    tooltip.innerText = txt;
+    tooltip.style.position = 'fixed';
+    tooltip.style.top = '50%';
+    tooltip.style.left = '50%';
+    tooltip.style.transform = 'translate(-50%, -50%)';
+    tooltip.style.background = 'rgba(0, 0, 0, 0.8)';
+    tooltip.style.color = '#fff';
+    tooltip.style.padding = '10px';
+    tooltip.style.borderRadius = '5px';
+    tooltip.style.transition = 'opacity 0.5s';
+    document.body.appendChild(tooltip);
+
+    setTimeout(() => {
+        tooltip.style.opacity = 0;
+        setTimeout(() => {
+            document.body.removeChild(tooltip);
+        }, 500);
+    }, 1000);
+}
 
 
 const hk2cn = OpenCC.Converter({ from: 'hk', to: 'cn' });
@@ -533,7 +554,7 @@ if (firstToolbarItem) {
             var newText = cn2hk(text);
             // 將內容寫入剪貼板
             navigator.clipboard.writeText(newText).then(function () {
-                alert('此操作會對剪貼板中的文本進行繁體轉換,並重新寫入剪貼板!');
+                tooltip('此操作會對剪貼板中的文本進行繁體轉換,並重新寫入剪貼板!');
             }, function (err) {
                 console.error('Async: Could not copy text: ', err);
             });
@@ -596,9 +617,11 @@ function copyfbib() {
     if (t != "") {
         navigator.clipboard.writeText(t).then(function () {
             let info = `bib 已格式！bbl 結果已寫入剪貼板。中文文獻數量:${zhnum}; 英文文獻數量:${endum}`
+            tooltip(info)
             document.getElementById("outputinfo").textContent = info;
         }, function (err) {
             console.error('Async: Could not copy text: ', err);
+
         });
     }
 }
@@ -608,6 +631,7 @@ function copyfbbl() {
     if (t != "") {
         navigator.clipboard.writeText(t).then(function () {
             let info = `bib 已格式！bbl 結果已寫入剪貼板。中文文獻數量:${zhnum}; 英文文獻數量:${endum}`
+            tooltip(info)
             document.getElementById("outputinfo").textContent = info;
         }, function (err) {
             console.error('Async: Could not copy text: ', err);
@@ -619,7 +643,11 @@ function copyfcitekeys() {
     let t = document.getElementById("citekeys").value;
     if (t != "") {
         navigator.clipboard.writeText(t).then(function () {
-            document.getElementById("outputinfo").textContent = `citekeys 結果已復製到剪貼板! 中文文獻數量:${zhnum}; 英文文獻數量:${endum}`
+
+            let info = `citekeys 結果已復製到剪貼板! 中文文獻數量:${zhnum}; 英文文獻數量:${endum}`
+            tooltip(info)
+
+            document.getElementById("outputinfo").textContent = info
         }, function (err) {
             console.error('Async: Could not copy text: ', err);
         });
@@ -636,9 +664,6 @@ function clearst() {
     document.getElementById("cliinput").value = "";
     document.getElementById("clioutput").value = "";
 }
-
-
-
 
 
 
@@ -769,3 +794,6 @@ if (mustx2) {
         div.style.display = 'none';
     });
 }
+
+
+

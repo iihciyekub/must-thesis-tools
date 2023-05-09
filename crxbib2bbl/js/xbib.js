@@ -633,9 +633,9 @@ class iname extends itex {
         let fidld1 = `_name_list`
         let fidld2 = `_name_num`
 
-
         if (t_list[0] == '{' && t_list[t_list.length - 1] == '}') {
-            t_list = [t_list]
+            t_list = t_list.split('and').map(x => x.trim()).filter(x => x !== '');
+            // t_list = [t_list]
         } else {
             if (t_list.indexOf("\\&") > -1) {
                 t_list = t_list.split('\\&').map(x => x.trim()).filter(x => x !== '');
@@ -656,7 +656,6 @@ class iname extends itex {
         let t_list = this[`_name_list`]
         let t_dic = {};
         t_list.forEach((n, index) => {
-
             if (n[0] == '{' && n[n.length - 1] == '}') {
                 t_dic[index] = { 'first': [n.slice(1, -1)] };
                 t_dic[index]['others'] = []
@@ -671,7 +670,6 @@ class iname extends itex {
                     n.shift();
                     // 将剩余元素保存到 namedict[index]['others'] 中
                     t_dic[index]['others'] = n;
-
                 } else {
                     n = n.trim().replace(" ", '');
                     if (n.length >= 4) {
@@ -770,7 +768,6 @@ class iname extends itex {
         this.__to_dict();
         let t_dic = this[`_name_dict`];
         if (Object.keys(t_dic).length == 0) { return "" };
-
 
         let lan = this.language;
         let num_name = this[`_name_num`]
@@ -1004,10 +1001,9 @@ class anybib {
     get language() {
         let [apaField, _] = this.get_field('language', 'apa7', '');
         if (this[apaField] != '') { return this[apaField] };
-        let t = this.f_txt;
-
+        // let t = this.f_txt;
+        let t = this.org_title + this.org_author
         t = t.match(/[\u4e00-\u9fa5]/) ? 'zh' : 'en';
-
         this[apaField] = t;
         return this[apaField];
     }
@@ -1215,7 +1211,7 @@ class anybib {
 
         let language = this.language;
         let entryType = this.entryType;
-        let typelist = ['article','incollection'];
+        let typelist = ['article', 'incollection'];
         let value = new itex(booktitle);
         if (language == 'zh') {
             // 如果this.entryType 出现在 lista ['book] 中
@@ -2311,7 +2307,10 @@ class read_bib {
 
         // biblist_zh  biblist_en 为数组
         biblist_zh = Object.entries(bib_dict['zh']).sort((a, b) => a[1][0] - b[1][0]).map(x => x[1][1])
-        biblist_en = Object.entries(bib_dict['en']).sort((a, b) => a[1][0].localeCompare(b[1][0])).map(x => x[1][1])
+
+        // 按字典 bib_dict['en'] 的值第二个元素的 apa7_citetxt 属性排序
+        biblist_en = Object.entries(bib_dict['en']).sort((a, b) => a[1][1].apa7_citetxt.localeCompare(b[1][1].apa7_citetxt)).map(x => x[1][1])
+
         return [biblist_zh, biblist_en]
     }
 
@@ -2490,4 +2489,5 @@ class read_bib {
         return outbib
     }
 }
+
 
