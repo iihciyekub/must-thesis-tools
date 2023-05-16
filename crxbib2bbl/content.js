@@ -390,7 +390,6 @@
 }));
 
 
-
 //尝试运行 捕捉异常
 try {
     var name = chrome.runtime.getManifest().name;
@@ -402,6 +401,121 @@ catch (e) {
 }
 
 
+
+
+// >>- 下拉菜单选项
+var sel = document.createElement('div');
+sel.id = "masee";
+sel.style.display = "flex";
+sel.style.backgroundColor = "#2F3A4C";
+sel.style.fontSize = "12pt";
+sel.style.width = "200%";
+sel.style.borderLeft = "2px solid #495365";
+sel.style.paddingLeft = "4pt";
+sel.style.paddingRight = "4pt";
+sel.style.borderRight = "2px solid #495365";
+sel.style.overflowY = "auto";
+sel.style.maxHeight = "600px";
+
+function gen_opt(marc) {
+    let c = ""
+    for (var key in marc) {
+        c += `\t<option>${key}</option>\n`
+    }
+    return c
+}
+var c1 = gen_opt(window.marc1)
+var c2 = gen_opt(window.marc2)
+var c3 = gen_opt(window.marc3)
+var c4 = gen_opt(window.marc4)
+var c5 = gen_opt(window.marc5)
+var c6 = gen_opt(window.marc6)
+var c7 = gen_opt(window.marc7)
+
+
+sel.innerHTML = `
+<style>
+.maseeselect{
+    width:20%;
+    min-width:17px;
+    border-radius: 3pt;
+    margin-left: 2pt;
+    margin-right: 2pt;
+}
+</style>
+<a style="color:white; width:70px; margin-left: 2pt; margin-right: 2pt;"> snippet </a>
+<select class="maseeselect" id="c1">
+    <option selected disabled">Base</option>
+${c1}
+</select>
+<select class="maseeselect" id="c2">
+    <option selected disabled">Fig</option>
+${c2}
+</select>
+<select class="maseeselect" id="c3">
+    <option selected disabled">Tab</option>
+${c3}
+</select>
+<select class="maseeselect" id="c4">
+    <option selected disabled">Math</option>
+${c4}
+</select>
+<select class="maseeselect" id="c5">
+    <option selected disabled">TikZ</option>
+${c5}
+</select>
+<select class="maseeselect" id="c6">
+    <option selected disabled">PGF</option>
+${c6}
+</select>
+<select class="maseeselect" id="c7">
+    <option selected disabled">Dev</option>
+${c7}
+</select>
+`
+
+// 找到当前 class ng-scope的标签
+var target = document.querySelector(".toolbar-pdf-right");
+if (target) {
+    // sel 标签插入到 与 变量 target 同级的标签前面
+    target.parentNode.insertBefore(sel, target);
+}
+
+// 选项点击事件
+function fun(idv, marc) {
+    var c1 = document.getElementById(idv)
+    c1.addEventListener('change', function () {
+        var info = c1.options[c1.selectedIndex].text;
+        var t = marc[info];
+        if (t != "") {
+            navigator.clipboard.writeText(t).then(function () {
+                tooltip(info + "  >> latex code 已复制")
+                document.getElementById("outputinfo").textContent = info;
+            }, function (err) {
+                console.error('Async: Could not copy text: ', err);
+            });
+        }
+        c1.selectedIndex = 0; // 将选择索引设置为第一个选项
+    });
+}
+
+fun("c1", window.marc1);
+fun("c2", window.marc2);
+fun("c3", window.marc3);
+fun("c4", window.marc4);
+fun("c5", window.marc5);
+fun("c6", window.marc6);
+fun("c7", window.marc7);
+
+
+// >>- 下拉菜单选项
+
+
+
+
+
+
+// bib2bbl GUI 窗口
 var modal = document.createElement('div');
 modal.innerHTML = `
 <div id="must">
@@ -470,6 +584,7 @@ modal.innerHTML = `
 	</div>
 </div>
 `
+// 添加到页面当如
 document.body.appendChild(modal);
 
 function tooltip(txt) {
@@ -511,7 +626,7 @@ function clickHandler(event) {
         return currentElement.matches(selector);
     })) {
         if (clickHandlerRegistered) {
-            div.style.display = 'none';
+            masee.style.display = 'none';
             document.removeEventListener('click', clickHandler);
             clickHandlerRegistered = false;
         } else {
@@ -563,11 +678,11 @@ if (firstToolbarItem) {
 
     // 顯示 bib2bbl 窗口
     var button2 = clone2.querySelector('button');
-    var div = document.getElementById('must');
+    var masee = document.getElementById('must');
 
     button2.addEventListener('click', function () {
         // 鼠標點擊註冊事件, 點擊其他地方隱藏
-        div.style.display = 'block';
+        masee.style.display = 'block';
         document.getElementById("outputinfo").textContent = "";
         //註冊鼠標點擊事件,當鼠標在目標框之外時隱藏 工具窗口
         document.addEventListener('click', clickHandler);
@@ -621,7 +736,6 @@ function copyfbib() {
             document.getElementById("outputinfo").textContent = info;
         }, function (err) {
             console.error('Async: Could not copy text: ', err);
-
         });
     }
 }
@@ -664,7 +778,6 @@ function clearst() {
     document.getElementById("cliinput").value = "";
     document.getElementById("clioutput").value = "";
 }
-
 
 
 var leftinput = document.getElementById("left-input")
@@ -784,14 +897,14 @@ clioutput.addEventListener('contextmenu', (event) => {
 var mustx = document.getElementById('mustx');
 if (mustx) {
     mustx.addEventListener('click', function () {
-        div.style.display = 'none';
+        masee.style.display = 'none';
     });
 }
 
 var mustx2 = document.getElementById('mustx2');
 if (mustx2) {
     mustx2.addEventListener('click', function () {
-        div.style.display = 'none';
+        masee.style.display = 'none';
     });
 }
 
