@@ -2,6 +2,9 @@
     display: none;
 }
 
+.must{
+    display: none;
+}
 .buthere {
     display: flex;
     justify-content: space-between;
@@ -10,16 +13,15 @@
 }
 
 .btn.btn-primary.l {
-    flex: 1;
+    flex:1;
     border-radius: 5px;
     margin-right: 5px;
-    min-height: 25 px;
+    min-height: 18 px;
     margin-top: 5px;
 
 }
-.modal-dialog.i{
-    width: 75%;
-}
+
+
 
 .btn.btn-primary.r {
     margin-left: auto;
@@ -30,40 +32,70 @@
 
 }
 
+
+.btn.btn-primary.s2t {
+    border-radius: 9px;
+    margin: 5px;
+    background-color: rgb(205, 68, 84);
+
+}
+
+.btn.btn-primary.t2s {
+    border-radius: 9px;
+    margin: 5px;
+    background-color: cadetblue;
+}
+
+
+
 #copyclear {
     background-color: rgb(20, 20, 20);
 }
 
-#copyrecitekeys {
+#copycitekeys {
     background-color: rgb(175, 61, 99);
 }
 
+#recitekeys{
+    background-color: rgb(61, 171, 175);
+
+}
+
 #cliinput {
-    min-height: 80px;
+    min-height: 300px;
     font-size: 12px;
-    width: 35%;
+    width: 50%;
     margin-right: 4px;
+    line-height: 1.2;
+
+
 }
 
 #clioutput {
-    min-height: 80px;
+    min-height: 300px;
     font-size: 12px;
-    width: 65%;
+    width: 50%;
     margin-left: 4px;
+    line-height: 1.2;
+
 }
 
-#left-input {
-    min-height: 150px;
+#bib-input {
+    min-height: 300px;
     font-size: 13px;
     width: 35%;
     margin-right: 4px;
+    white-space: nowrap;
+    line-height: 1.2;
 }
 
-#right-input {
-    min-height: 150px;
+#bbl-output {
+    min-height: 300px;
     font-size: 13px;
     width: 65%;
     margin-left: 4px;
+    white-space: nowrap;
+    line-height: 1.2;
 }
 
 a {
@@ -85,4 +117,47 @@ a {
     width: 100%;
     min-height: 60px;
     margin-top: 5px;
+}
+
+.maseeselect {
+    width: 20%;
+    min-width: 17px;
+    border-radius: 3pt;
+    margin-left: 2pt;
+    margin-right: 2pt;
+}
+
+#masee {
+    display: flex;
+    background-color: #F4F5F6;
+    font-size: 12pt;
+    width: 100%;
+    padding: 4pt;
+    max-height: 600px;
+}
+
+
+.switch {
+    background-color: #E7E9EE;
+    color: #495365
+}
+#latex-macro {
+    min-height: 20px;
+    font-size: 13px;
+    width: 100%;
+    margin-right: 4px;
+    white-space: nowrap;
+    line-height: 1.2;
+    resize: vertical;
+    align-items: center;
+}
+
+#latex-macro-example {
+    min-height: 250px;
+    font-size: 13px;
+    width: 100%;
+    margin-right: 4px;
+    white-space: nowrap;
+    line-height: 1.2;
+    resize: vertical;
 }
